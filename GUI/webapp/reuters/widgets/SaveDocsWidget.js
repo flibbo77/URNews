@@ -8,10 +8,6 @@ var SaveDocsWidget = (function() {
 	comment: ""
 },
 	
-	
-	
-
-	
 	init = function() {
 		localStorageModel = LocalStorageModel.init();
 		window.onload=function(){
@@ -28,10 +24,9 @@ var SaveDocsWidget = (function() {
     		$(this).siblings().css({
     			"background-color": "white",
     			"color" : "black"
-
     		})
     		$(this).css({
-		      "background-color": "darkblue",
+		      "background-color": "#9c004b",
 		      "color": "white"
 		    });
 
@@ -52,7 +47,6 @@ var SaveDocsWidget = (function() {
 			localStorageModel.deleteDocument(actDoc.index, actDoc.title, actualizeWindow );
 			$(".actual_doc_content")[0].value = "";
 		}
-
 	}
 
 	saveDocHandler = function(e){
@@ -74,7 +68,6 @@ var SaveDocsWidget = (function() {
 			localStorageModel.saveChangesToLocalStorage(actDoc.index, actDoc.title, actDoc.comment);
 		}
 
-
 		actDoc.index = e.srcElement.classList[1];
 		actDoc.title = e.srcElement.textContent;
 
@@ -92,19 +85,9 @@ var SaveDocsWidget = (function() {
 		$(".saved_docs_headings").empty();
 		for(var i = 0; i < savedDocs.length; i++)
 			$(".saved_docs_headings").append("<li class='savedDocTitle "+ i +"' style='list-style-type: none'>"+ savedDocs[i].title+ "</li");
-
-
 	};
 
-	
-
-	
-
-
-
 	that.init = init;
-	
-
 
 	return that;
 
