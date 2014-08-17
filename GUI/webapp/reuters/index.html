@@ -7,8 +7,10 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css">
-  <script src="js/reuters.js"></script>
   <script src="../codeConverter.js"></script>
+  <script src="js/LocalStorageModel.js"></script>
+  <script src="widgets/SaveDocsWidget.js"></script>
+  <script src="js/reuters.js"></script>
   <script src="../../core/Core.js"></script>
   <script src="../../core/AbstractManager.js"></script>
   <script src="../../managers/Manager.jquery.js"></script>
@@ -26,31 +28,35 @@
   <script src="widgets/CalendarWidget.js"></script>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   
+  
 </head>
 <body>
   <div id="wrap">      
     <div id="header">
       <h1>UR News Search</h1>
-      <h2>Browse Reuters business news from 1987</h2>
+      
     </div>
     <div class="left">
       <h2>Current Selection</h2>
       <ul id="selection"></ul>
 
-      <h2>Search</h2>
-      <span id="search_help">(press ESC to close suggestions)</span>
-      <ul id="search">
-        <input type="text" id="query" name="query" autocomplete="off">
-      </ul>
+      <div class = "searchField">
+        <h2>Search</h2>
+        <span id="search_help">(press ESC to close suggestions)</span>
+        <ul id="search">
+          <input type="text" id="query" name="query" autocomplete="off">
+        </ul>
+      </div>
+      <div id="accordion">
+        <h3>Top Topics</h3>
+        <div class="tagcloud" id="topics"></div>
 
-      <h2>Top Topics</h2>
-      <div class="tagcloud" id="topics"></div>
+        <h3 >Top Organisations</h3>
+        <div class=" tagcloud" id="organisations"></div>
 
-      <h2>Top Organisations</h2>
-      <div class="tagcloud" id="organisations"></div>
-
-      <h2>Top Exchanges</h2>
-      <div class="tagcloud" id="exchanges"></div>
+        <h3 >Top Exchanges</h3>
+        <div class="tagcloud" id="exchanges"></div>
+      </div>
     </div>
 
      <div class="right">
@@ -66,16 +72,29 @@
           <div id="pager-header"></div>
         </div>
         <div id="docs"></div>
+        <div id="navigation_bot">
+          <ul id="pager_bot"></ul>
+          <div id="pager-header_bot"></div>
+        </div>
       </div>
     </div>
 
     <div class="userBar">
-      <h2>User Tools</h2>
-      <h3>safed documents:</h3>
+      
+      <h3>saved documents:</h3>
+      <div  class="saved_docs_headings"><ul></ul></div>
+      <textarea readonly cols="40" rows="15"class="actual_doc_content"></textarea>
+      <button class="deleteDocBut">Delete</button>
+      <h3>Comment</h3>
+      <textarea placeholder="leave a comment here" cols="40" rows="5" class="actual_doc_comment"></textarea>
     </div>
   </div>
 </body>
 <script type= "text/javascript">
    google.load("visualization", "1", {packages:["geochart"]});
-   </script>
+</script>
+<script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["calendar"]});
+</script>
+
 </html>

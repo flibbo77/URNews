@@ -1,5 +1,6 @@
 (function ($) {
 
+
 AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
   start: 0,
 
@@ -59,39 +60,47 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
   template: function (doc) {
     var snippet = '';
     if(doc.text){
-      if (doc.text.length > 300) {
-        console.log("länger!!!");
-        snippet += doc.dateline + ' ' + doc.text.substring(0, 300);
-        snippet += '<span style="display:none;">' + doc.text.substring(300);
-        snippet += '</span> <a href="#" class="more">more</a>';
+      if (doc.text.length > 250) {
+        console.log("länger!!!");//+Jahr!!!
+        snippet += doc.dateline + ' ' + doc.text.substring(0, 250);
+        snippet += '<span style="display:none;">' + doc.text.substring(250);
+        snippet += '</span> <a href="#" class="more">...</a>';
       }
       else {
         snippet += doc.dateline + ' ' + doc.text;
       }
     }
 
-    var output = '<div><h3>' + doc.title + '</h3>';
-    output += '<p id="links_' + doc.id + '" class="links"></p>';
-    output += '<p>' + snippet + '</p></div>';
+    var output = '<div class="NewsItem" ><h3 class="title" style="display: inline-block">' + doc.title + '</h3><button class="saveBut" style="display: inline; float: right">save</button>';
+
+    output += '<p class="snippet">' + snippet + '</p>';
+    if(doc.text)
+      output += "<p class = 'wordsCount' style='display: inline'> " + doc.text.split(' ').length + " words</p>";
+    output += '<p id="links_' + doc.id + '" class="links" style="display:inline; float:right"></p></div>';
+    
+    
     return output;
   },
 
   init: function () {
-    $(document).on('click', 'a.more', function () {
+    $(document).on('click', 'p.snippet', function () {
       var $this = $(this),
-          span = $this.parent().find('span');
+          span = $this.find('span');
+          console.log(span);
 
       if (span.is(':visible')) {
         span.hide();
-        $this.text('more');
+        //$this.text('more');
       }
       else {
         span.show();
-        $this.text('less');
+        //$this.text('less');
       }
+
 
       return false;
     });
+    
   }
 });
 

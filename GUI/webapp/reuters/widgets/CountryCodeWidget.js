@@ -5,22 +5,15 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
 
 
   afterRequest: function () {
-    $("#regions_div").empty();
     var self = this;
-
     $(this.target).empty();
-
     var maxCount = 0;
    
     for (var facet in this.manager.response.facet_counts.facet_fields[this.field]) {
-          
-      if (facet.length <20) { // NOT only display country codes -- changed!
         var count = this.manager.response.facet_counts.facet_fields[this.field][facet];
         if (count > maxCount) {
           maxCount = count;
         }
-       
-      }
     }
  
     var myData =  [];
@@ -28,19 +21,18 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
 
     for (var facet in this.manager.response.facet_counts.facet_fields[this.field]) {
       myData.push([facet.toUpperCase(), (this.manager.response.facet_counts.facet_fields[this.field][facet] )]);
-    
     }
-   
     
     var data = google.visualization.arrayToDataTable(myData);
     var options = {
-      colorAxis: {colors: ['lightblue','blue','yellow', 'orange','red']}
+      colorAxis: {colors: ['lightblue','blue','yellow', 'orange','#9c004b']}
     };
-    console.log(self.target);
     var chart = new google.visualization.GeoChart(document.getElementById(self.target.substr(1)));
     chart.draw(data,options);
     google.visualization.events.addListener(chart, "ready", function(){
+      google.visualization.events.removeListener();
       google.visualization.events.addListener(chart, 'regionClick', selectHandler);
+      console.log("map ready");
     })
 
     function selectHandler(obj) {
@@ -54,8 +46,10 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
     }
 
     google.setOnLoadCallback(function(){
-      chart.draw(data, options);}
-    );     
+      console.log("before draw");
+      chart.draw(data, options);
+      console.log("after draw");
+    });     
   },
 
   template: function (name, container) {

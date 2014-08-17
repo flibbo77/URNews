@@ -1,9 +1,11 @@
 var Manager;
+var saveDocs = SaveDocsWidget.init();
 
 (function ($) {
 
   $(function () {
     
+
     Manager = new AjaxSolr.Manager({
       solrUrl: 'http://localhost:8983/solr/collection1/'
       //solrUrl: 'http://reuters-demo.tree.ewdev.ca:9090/reuters/'
@@ -24,6 +26,17 @@ var Manager;
       innerWindow: 1,
       renderHeader: function (perPage, offset, total) {
         $('#pager-header').html($('<span></span>').text('displaying ' + Math.min(total, offset + 1) + ' to ' + Math.min(total, offset + perPage) + ' of ' + total));
+      }
+    }));
+
+    Manager.addWidget(new AjaxSolr.PagerWidget({
+      id: 'pager2',
+      target: '#pager_bot',
+      prevLabel: '&lt;',
+      nextLabel: '&gt;',
+      innerWindow: 1,
+      renderHeader: function (perPage, offset, total) {
+        $('#pager-header_bot').html($('<span></span>').text('displaying ' + Math.min(total, offset + 1) + ' to ' + Math.min(total, offset + perPage) + ' of ' + total));
       }
     }));
     var fields = [ 'topics', 'organisations', 'exchanges' ];
@@ -73,6 +86,11 @@ var Manager;
     }
     Manager.doRequest();
   });
+
+  $(saveDocs).on("saveDoc", function(e, doc){
+    console.log(doc);
+  });
+   
 
   $.fn.showIf = function (condition) {
     if (condition) {

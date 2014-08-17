@@ -23,7 +23,7 @@ a:hover {
 }
 
 #wrap {
-  width: 1200px;
+  width: 1350px;
   margin: 0px auto;
 }
 .clear {
@@ -37,7 +37,7 @@ a:hover {
 }
 #header h1 {
   padding: 20px 0 5px 10px;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: -2px;
 }
 #header h2 {
@@ -51,23 +51,29 @@ a:hover {
 
 .right {
   float: left;
-  width: 650px;
-  padding: 10px 20px 10px 40px;
+  width: 750px;
+  padding: 10px 10px 10px 10px;
   border-left: 1px solid #aaa;
   border-right: 1px solid #aaa;
   text-align: justify;
 }
 .right h3 {
   padding: 15px 0 5px 0;
-  color: #CC3750;
+  color: #9c004b;
   font-size: 17px;
   font-weight: 100;
   letter-spacing: 0px;
 }
 
+.NewsItem {
+  border-bottom: 1px solid #aaa;
+  padding: 3px;
+}
+
 .userBar {
   float:left;
-  padding: 10px 20px 10px 40px;
+  width: 200px;
+  padding: 10px
 }
 .bottom {
   float:  none; 
@@ -80,11 +86,15 @@ a:hover {
   border-bottom: 1px solid #000;
 }
 #pager,
-#pager-header {
+#pager-header,
+#pager_bot,
+#pager-header_bot {
   display: inline;
 }
 #pager li,
-.links li {
+#pager_bot li,
+.links li
+ {
   list-style-type: none;
   display: inline;
 }
@@ -103,20 +113,26 @@ a:hover {
 .left {
   float: left;
   width: 220px;
+  padding:  10px;
   
 }
-.left h2 {
-  clear: left;
-  padding-top: 20px;
+.left h3 {
   color: #333;
-  font-size: 13px;
+  
 }
 #search input {
-  width: 200px;
+  width: 220px;
+}
+
+.searchField {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  
 }
 #calendar {
   float: right;
   margin-left:40px;
+  margin-top:50px;
 }
 #countries {
   float: left;
@@ -124,8 +140,16 @@ a:hover {
 #search_help {
   font-size: 80%;
 }
+.wordsCount {
+  color: #333;
+  font-weight: bold;
+  font-style: normal;
+}
 .tagcloud {
-  padding: 10px 15px 0;
+  
+  line-height: 10px;
+  height: 250px;
+
 }
 .tagcloud_item {
   float: left;
@@ -135,6 +159,22 @@ a:hover {
 }
 .tagcloud_item:hover {
   color: #f00;
+}
+
+.saved_docs_headings {
+  height:100px; 
+  width: 300px; 
+  overflow:auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: solid 1px #888;
+  padding:  5px;
+}
+
+.savedDocTitle:hover{
+  background-color: blue;
+  color: white;
+  cursor:  pointer;
 }
 
 /* tagcloud */
@@ -171,4 +211,7 @@ font-size: 170%;
 }
 a.tagcloud_size_10 {
 font-size: 180%;
+}
+i{
+  font-style: normal;
 }
