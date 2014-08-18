@@ -44,15 +44,12 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
     }
 
     function selectHandler(){
-      console.log(chart.getSelection()[0].row);
-      if(chart.getSelection()[0].row){
-        var dateObj = dataTable.Of[chart.getSelection()[0].row].c[0].v;
-        console.log(dateObj);
-        var corrDay =dateObj.getDate() + 1; //for some reason must be incremented by one
+      var selection =chart.getSelection()[0].row;
+      if(selection){
+        var dateObj = dataTable.getValue(selection,0);
+        var corrDay = dateObj.getDate() + 1; //for some reason must be incremented by one
         dateObj.setDate(corrDay);
-        console.log(dateObj.toISOString());
         var dateString = dateObj.toISOString().split("T")[0];
-        console.log('[' + dateString + 'T00:00:00Z TO ' + dateString + 'T23:59:59Z]');
 
          if (self.add('[' + dateString + 'T00:00:00Z TO ' + dateString + 'T23:59:59Z]')) {
             self.doRequest();
@@ -64,7 +61,7 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
 
        var options = {
         
-         height: 150, 
+         height: 190, 
          noDataPattern: {
            backgroundColor: '#ddd',
            color: '#ddd'
