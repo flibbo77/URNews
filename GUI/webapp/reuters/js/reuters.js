@@ -1,5 +1,11 @@
 var Manager;
-var saveDocs = SaveDocsWidget.init();
+var saveDocs = SaveDocsWidget;
+
+  window.onload = function(){
+    LayoutSelectWidget.init();
+    saveDocs.init();
+  };
+
 
 (function ($) {
 
@@ -90,6 +96,7 @@ var saveDocs = SaveDocsWidget.init();
   $(saveDocs).on("saveDoc", function(e, doc){
     console.log(doc);
   });
+
    
 
   $.fn.showIf = function (condition) {

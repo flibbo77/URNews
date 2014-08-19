@@ -10,6 +10,7 @@
   <script src="../codeConverter.js"></script>
   <script src="js/LocalStorageModel.js"></script>
   <script src="widgets/SaveDocsWidget.js"></script>
+  <script src="widgets/LayoutSelectWidget.js"></script>
   <script src="js/reuters.js"></script>
   <script src="../../core/Core.js"></script>
   <script src="../../core/AbstractManager.js"></script>
@@ -37,7 +38,15 @@
       
     </div>
     <div class="left">
-      <h2>Current Selection</h2>
+
+
+      <div class="layoutButtons">
+        <button class="layoutSelectBut selectAll">all</button>
+        <button class="layoutSelectBut selectMap">map</button>
+        <button class="layoutSelectBut selectCalendar">calendar</button>
+        <button class="layoutSelectBut selectNothing">nothing</button>
+      </div>
+      <h2 class="currentSelectionHeader">Current Selection</h2>
       <ul id="selection"></ul>
 
       <div class = "searchField">

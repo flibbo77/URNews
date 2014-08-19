@@ -1,27 +1,11 @@
 (function ($) {
+  var chart = null;
+  var option = null;
+  var dataTable = null;
+
+  var layoutSelectWidget = LayoutSelectWidget;
 
 AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
-  /*afterRequest: function () {
-    var self = this;
-    $(this.target).datepicker('destroy').datepicker({
-      dateFormat: 'yy-mm-dd',
-      defaultDate: new Date(1987, 2, 1),
-      maxDate: $.datepicker.parseDate('yy-mm-dd', this.manager.store.get('facet.date.end').val().substr(0, 10)),
-      minDate: $.datepicker.parseDate('yy-mm-dd', this.manager.store.get('facet.date.start').val().substr(0, 10)),
-      nextText: '&gt;',
-      prevText: '&lt;',
-      beforeShowDay: function (date) {
-        var value = $.datepicker.formatDate('yy-mm-dd', date) + 'T00:00:00Z';
-        var count = self.manager.response.facet_counts.facet_dates[self.field][value];
-        return [ parseInt(count) > 0, '', count + ' documents found!' ];
-      },
-      onSelect: function (dateText, inst) {
-        if (self.add('[' + dateText + 'T00:00:00Z TO ' + dateText + 'T23:59:59Z]')) {
-          self.doRequest();
-        }
-      }
-    });
-  }*/
 
 
   afterRequest: function (){
@@ -30,7 +14,7 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
     drawChart();
 
    function drawChart() {
-       var dataTable = new google.visualization.DataTable();
+       dataTable = new google.visualization.DataTable();
        dataTable.addColumn({ type: 'date', id: 'Date' });
        dataTable.addColumn({ type: 'number', id: 'Articles' });
        var myDates = [];
@@ -57,9 +41,9 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
       }
     }
 
-       var chart = new google.visualization.Calendar(document.getElementById(self.target.substr(1)));
+       chart = new google.visualization.Calendar(document.getElementById(self.target.substr(1)));
 
-       var options = {
+       options = {
         
          height: 190, 
          noDataPattern: {
@@ -95,9 +79,51 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
 
          };
 
-       chart.draw(dataTable, options);
-    google.visualization.events.addListener(chart, 'select', selectHandler);
+        chart.draw(dataTable, options);
+        google.visualization.events.addListener(chart, 'select', selectHandler);
      }
+
+    $(layoutSelectWidget).on("redrawCalendar", redrawCalendar);
+
+    function redrawCalendar(e, cellSize){
+      options = {
+        
+         height: 190, 
+         noDataPattern: {
+           backgroundColor: '#ddd',
+           color: '#ddd'
+         },
+        
+         
+          calendar: { 
+            cellSize: cellSize,
+            yearLabel: {
+              fontSize: 14,
+              bold: true,
+              italic: false
+            },
+            monthLabel: {
+              fontSize: 11
+            },
+
+            monthOutlineColor: {
+              stroke: '#981b48',
+              strokeOpacity: 0.8,
+              strokeWidth: 2
+            },
+            unusedMonthOutlineColor: {
+              stroke: '#bc5679',
+              strokeOpacity: 0.8,
+              strokeWidth: 1
+            },
+            underMonthSpace: 16,
+
+           }
+
+         };
+      if(chart)
+        chart.draw(dataTable,options);
+    }
   }
 });
 

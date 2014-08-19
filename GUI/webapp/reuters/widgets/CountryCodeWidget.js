@@ -1,5 +1,9 @@
 (function ($) {
  var codeConv = codeConverter.init();
+ var layoutSelectWidget = LayoutSelectWidget;
+ var chart;
+ var data;
+ var options;
 
 AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
 
@@ -23,11 +27,11 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
       myData.push([facet.toUpperCase(), (this.manager.response.facet_counts.facet_fields[this.field][facet] )]);
     }
     
-    var data = google.visualization.arrayToDataTable(myData);
-    var options = {
+    data = google.visualization.arrayToDataTable(myData);
+    options = {
       colorAxis: {colors: ['lightblue','blue','yellow', 'orange','#9c004b']}
     };
-    var chart = new google.visualization.GeoChart(document.getElementById(self.target.substr(1)));
+    chart = new google.visualization.GeoChart(document.getElementById(self.target.substr(1)));
     chart.draw(data,options);
     google.visualization.events.addListener(chart, "ready", function(){
       google.visualization.events.removeListener();
@@ -45,19 +49,19 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
       }
     }
 
+    $(layoutSelectWidget).on("redrawMap", redrawMap);
+
+    function redrawMap(){
+      //self.doRequest();
+      if(chart)
+        chart.draw(data,options);
+    }
+
     google.setOnLoadCallback(function(){
       console.log("before draw");
       chart.draw(data, options);
       console.log("after draw");
     });     
-  },
-
-  template: function (name, container) {
-    var options = [];
-    for (var value in container) {
-      options.push('<option value="' + value +'">' + container[value] + '</option>');
-    }
-    return '<select id="' + name + '" name="' + name + '">' + options.join('\n') + '</select>';
   },
 
  

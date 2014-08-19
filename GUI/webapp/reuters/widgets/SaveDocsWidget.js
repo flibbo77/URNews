@@ -11,10 +11,10 @@ var SaveDocsWidget = (function() {
 	
 	init = function() {
 		localStorageModel = LocalStorageModel.init();
-		window.onload=function(){
+		//window.onload=function(){
 			actualizeWindow();
-		}
-		$(document).off('click');	
+		//}
+		//$(document).off('click');	
     	$(document).on('click', 'button.saveBut', function (e) {
         	console.log($(e.srcElement.parentElement).children(".title").text());
         	//$(that).trigger("saveDoc", e.srcElement.parentElement);

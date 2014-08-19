@@ -29,11 +29,14 @@ a:hover {
 .clear {
   clear: both;
 }
+.currentSelectionHeader {
+  margin-top: 10px
+}
 
 /* header */
 
 #header {
-  height: 60px;
+  height: 70px;
 }
 #header h1 {
   padding: 20px 0 5px 10px;
