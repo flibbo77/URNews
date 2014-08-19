@@ -16,11 +16,11 @@ LocalStorageModel = (function() {
 		console.log("delete doc nr: " + index + " title: " + title);
 		console.log(temp[index].title);
 		if(temp[index].title == title){
-			console.log("delete");
-			temp.splice(index, 1);
 			deleteDocuments();
+			temp.splice(index, 1);
 			for(var i = 0; i < temp.length; i++)
 				saveToLocalStorage(temp[i]);
+			console.log("akt size of localStorage; " +localStorage.length);
 			callback();
 		}
 	},
@@ -37,7 +37,6 @@ LocalStorageModel = (function() {
   	},
 
   	saveChangesToLocalStorage = function (index, title, comment){
-  		console.log(comment);
   		var temp = getDocuments();
   		console.log(temp[index].title + " vs " + title);
   		if(temp[index].title == title){
@@ -53,7 +52,6 @@ LocalStorageModel = (function() {
 
 	saveToLocalStorage = function(resultObj){
 		localStorage[localStorage.length] = JSON.stringify(resultObj);
-		console.log(localStorage.length);
 	};
 
 	that.init = init;

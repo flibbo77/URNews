@@ -6,7 +6,8 @@ var SaveDocsWidget = (function() {
 	title: "",
 	content: "",
 	comment: ""
-},
+	},
+	lastWasDeletet = false,
 	
 	init = function() {
 		localStorageModel = LocalStorageModel.init();
@@ -33,6 +34,8 @@ var SaveDocsWidget = (function() {
     		console.log(e);
     		loadDocHandler(e);
     	});
+
+    
     	$(document).on('click', 'button.deleteDocBut', function (e) {
     		console.log(e);
     		deleteDocHandler(e);
@@ -45,7 +48,9 @@ var SaveDocsWidget = (function() {
 	deleteDocHandler =function(e){
 		if(actDoc.index >= 0){
 			localStorageModel.deleteDocument(actDoc.index, actDoc.title, actualizeWindow );
+			lastWasDeletet = true;
 			$(".actual_doc_content")[0].value = "";
+			$(".actual_doc_comment")[0].value = "";
 		}
 	}
 
@@ -62,7 +67,7 @@ var SaveDocsWidget = (function() {
 	},
 
 	loadDocHandler = function(e){
-		if(actDoc.index >= 0){
+		if(actDoc.index >= 0 && !lastWasDeletet){
 			actDoc.comment = $(".actual_doc_comment")[0].value;
 			console.log (actDoc.comment);
 			localStorageModel.saveChangesToLocalStorage(actDoc.index, actDoc.title, actDoc.comment);
@@ -76,6 +81,7 @@ var SaveDocsWidget = (function() {
 		actDoc.comment = temp[actDoc.index].comment;
 		$(".actual_doc_content")[0].value = actDoc.content;
 		$(".actual_doc_comment")[0].value = actDoc.comment;
+		lastWasDeletet = false;
 		console.log(actDoc.comment);
 	}
 

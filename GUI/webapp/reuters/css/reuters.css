@@ -87,6 +87,10 @@ a:hover {
 #result a {
   margin-right: 5px;
 }
+
+.navi {
+  text-align:center;
+}
 #navigation {
   border-bottom: 1px solid #000;
 }
@@ -177,9 +181,14 @@ a:hover {
 }
 
 .savedDocTitle:hover{
-  background-color: blue;
+  background-color: grey;
   color: white;
   cursor:  pointer;
+}
+
+.savedDocTitle {
+ 
+  border-bottom: 1px solid #aaa
 }
 
 /* tagcloud */

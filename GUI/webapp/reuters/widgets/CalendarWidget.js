@@ -72,13 +72,24 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
             cellSize: 7,
             yearLabel: {
               fontSize: 14,
-              
               bold: true,
               italic: false
             },
-             monthLabel: {
-          fontSize: 11
-         }
+            monthLabel: {
+              fontSize: 11
+            },
+
+            monthOutlineColor: {
+              stroke: '#981b48',
+              strokeOpacity: 0.8,
+              strokeWidth: 2
+            },
+            unusedMonthOutlineColor: {
+              stroke: '#bc5679',
+              strokeOpacity: 0.8,
+              strokeWidth: 1
+            },
+            underMonthSpace: 16,
 
            }
 
