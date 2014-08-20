@@ -1,5 +1,5 @@
 * {
-  padding: 0;
+  
   margin: 0;
 }
 
@@ -33,6 +33,28 @@ a:hover {
   margin-top: 10px
 }
 
+.saveBut {
+  height: 25px;
+  width: 25px;
+  background-image: url(../images/save.png)
+}
+
+.closeCalendarBut {
+  
+}
+.closeMapBut {
+  
+}
+
+#closeCalendarButtonContainer,
+#closeMapButtonContainer {
+  display:inline;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 /* header */
 
 #header {
@@ -56,8 +78,6 @@ a:hover {
   float: left;
   width: 750px;
   padding: 10px 10px 10px 10px;
-  border-left: 1px solid #aaa;
-  border-right: 1px solid #aaa;
   text-align: justify;
 }
 .right h3 {
@@ -80,8 +100,10 @@ a:hover {
 
 .userBar {
   float:left;
-  width: 200px;
-  padding: 10px
+  width: 320px;
+  height:1000px;
+  padding: 10px;
+  background-color: #f9f9f9;
 }
 .bottom {
   float:  none; 
@@ -125,6 +147,8 @@ a:hover {
 .left {
   float: left;
   width: 220px;
+  height: 1000px;
+  background-color: #f9f9f9;
   padding:  10px;
   
 }
@@ -132,8 +156,10 @@ a:hover {
   color: #333;
   
 }
-#search input {
+#search  {
   width: 220px;
+  padding: 0px;
+  margin:0px;
 }
 
 .searchField {

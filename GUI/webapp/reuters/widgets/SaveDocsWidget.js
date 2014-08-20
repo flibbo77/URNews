@@ -8,16 +8,16 @@ var SaveDocsWidget = (function() {
 	comment: ""
 	},
 	lastWasDeletet = false,
+	windowNr = 0;
+
 	
 	init = function() {
 		localStorageModel = LocalStorageModel.init();
-		//window.onload=function(){
-			actualizeWindow();
-		//}
-		//$(document).off('click');	
+		actualizeWindow();
+		console.log("SaveDocsInit");
+		//$(document).off();
+
     	$(document).on('click', 'button.saveBut', function (e) {
-        	console.log($(e.srcElement.parentElement).children(".title").text());
-        	//$(that).trigger("saveDoc", e.srcElement.parentElement);
         	saveDocHandler(e);
    		 });
 
@@ -41,6 +41,10 @@ var SaveDocsWidget = (function() {
     		deleteDocHandler(e);
     	});
 
+    	$(document).on('click', 'button.openInWindowBut', function (e) {
+        	openInWindowHandler(e);
+   		 });
+
 		
      	return that;
 	},
@@ -55,15 +59,21 @@ var SaveDocsWidget = (function() {
 	}
 
 	saveDocHandler = function(e){
+
 		var doc = {
-			title: $(e.srcElement.parentElement).children(".title").text(),
-			content: $(e.srcElement.parentElement).children(".snippet").text(),
+			title: $(e.target.parentElement).children(".title").text(),
+			content: $(e.target.parentElement).children(".snippet").text(),
 			comment: ""
 		}
-		console.log(doc);
+		doc.content = doc.content.substring(1,doc.content.length - 4 );
 
 		localStorageModel.saveToLocalStorage(doc);
 		actualizeWindow();
+		console.log($("."+actDoc.index));
+		$("."+actDoc.index).css({
+		      "background-color": "#9c004b",
+		      "color": "white"
+		    });
 	},
 
 	loadDocHandler = function(e){
@@ -72,9 +82,10 @@ var SaveDocsWidget = (function() {
 			console.log (actDoc.comment);
 			localStorageModel.saveChangesToLocalStorage(actDoc.index, actDoc.title, actDoc.comment);
 		}
+		console.log(e);
 
-		actDoc.index = e.srcElement.classList[1];
-		actDoc.title = e.srcElement.textContent;
+		actDoc.index = e.target.classList[1];
+		actDoc.title = e.target.textContent;
 
 		var temp = localStorageModel.getDocuments();
 		actDoc.content = temp[actDoc.index].content;
@@ -83,7 +94,24 @@ var SaveDocsWidget = (function() {
 		$(".actual_doc_comment")[0].value = actDoc.comment;
 		lastWasDeletet = false;
 		console.log(actDoc.comment);
-	}
+	},
+
+	openInWindowHandler = function(e){
+
+		var template = '<div id="cont1" class="container_'+windowNr+'" style="position:relative; top: 100px; left: 300px; width: 400px;z-index: 1;height:300px"';
+		template += ' data-icon="css/icons/news.png"  data-alwaisontop=false data-resizegrid="20,20" data-centeronwindow = true data-skin= "black" data-drag= true data-resize=true  data-dock="dock" data-collapse=false data-close=false data-containment="document" data-modal=false data-buttons="fullscreen,dock,close">';
+		template += '<h2 class="windowHeader">'+actDoc.title+'</h2><p class="windowContent">'+actDoc.content+'</p>;'
+        template += '<p class="windowContentComment">'+actDoc.comment+'</p></div>';
+    	$(".windowsContainer").append(template);
+		$(".container_"+windowNr).containerize();
+		setTimeout(function(){
+			$(".container_"+windowNr).css({
+			"z-index":"1"
+			});
+			console.log("setTimeout");
+		}, 5000);
+		windowNr++;
+	},
 
 	actualizeWindow = function(){
 		var savedDocs = [];

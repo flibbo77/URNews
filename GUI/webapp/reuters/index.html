@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <title>AJAX Solr</title>
   <link rel="stylesheet" href="css/reuters.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+  <link href='css/mb.containerPlus.css' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css">
-  <script src="../codeConverter.js"></script>
+  <script src="js/nameCodeMap.js"></script>
+  <script src="js/codeConverter.js"></script>
   <script src="js/LocalStorageModel.js"></script>
   <script src="widgets/SaveDocsWidget.js"></script>
   <script src="widgets/LayoutSelectWidget.js"></script>
@@ -22,12 +24,15 @@
   <script src="../../widgets/jquery/PagerWidget.js"></script>
   <script src="../../core/AbstractFacetWidget.js"></script>
   <script src="widgets/TagcloudWidget.js"></script>
-  <script src="widgets/CurrentSearchWidget.9.js"></script>
+  <script src="widgets/CurrentSearchWidget.js"></script>
   <script src="../../core/AbstractTextWidget.js"></script>
   <script src="widgets/AutocompleteWidget.js"></script>
   <script src="widgets/CountryCodeWidget.js"></script>
   <script src="widgets/CalendarWidget.js"></script>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+   
+  <script type="text/javascript" src="inc/jquery.mb.containerPlus.js"></script>
+  <script type="text/javascript" src="inc/mb.containerPlus.plugins.js"></script>
   
   
 </head>
@@ -35,22 +40,19 @@
   <div id="wrap">      
     <div id="header">
       <h1>UR News Search</h1>
-      
     </div>
     <div class="left">
-
-
       <div class="layoutButtons">
-        <button class="layoutSelectBut selectAll">all</button>
-        <button class="layoutSelectBut selectMap">map</button>
-        <button class="layoutSelectBut selectCalendar">calendar</button>
-        <button class="layoutSelectBut selectNothing">nothing</button>
+        <button class="layoutSelectBut selectAll"><img src="images/all.png"/></button>
+        <button class="layoutSelectBut selectMap"><img src="images/map.png"/></button>
+        <button class="layoutSelectBut selectCalendar"><img src="images/calendar.png"/></button>
+        <button class="layoutSelectBut selectNothing"><img src="images/nothing.png"/></button>
       </div>
       <h2 class="currentSelectionHeader">Current Selection</h2>
       <ul id="selection"></ul>
 
       <div class = "searchField">
-        <h2>Search</h2>
+        <h2>Search in Article</h2>
         <span id="search_help">(press ESC to close suggestions)</span>
         <ul id="search">
           <input type="text" id="query" name="query" autocomplete="off">
@@ -70,10 +72,18 @@
 
      <div class="right">
       <div class="bottom">
-        <div id="countries" style="width: 300px"></div>
-        <div id="calendar"></div>
-        <div id="preview"></div>
-        <div class="clear"></div>
+        <div id= "closeMapButtonContainer">
+          <button class="closeMapBut"><img src="images/nothing_small.png"/></button>
+          <div id="countries" style="width: 300px">
+        </div></div>
+
+        <div id="closeCalendarButtonContainer">
+          <button class="closeCalendarBut"><img src="images/nothing_small.png"/></button>
+          <div id="calendar">
+          
+        </div></div>
+       <!-- <div id="preview"></div>-->
+        <div class="clear"></div> 
       </div>
       <div id="result">
         <div id="navigation" class= "navi">
@@ -93,10 +103,12 @@
       <h3>saved documents:</h3>
       <div  class="saved_docs_headings"><ul></ul></div>
       <textarea readonly cols="40" rows="15"class="actual_doc_content"></textarea>
-      <button class="deleteDocBut">Delete</button>
+      <button class="deleteDocBut"><img src="images/delete.png"/></button>
+      <button class="openInWindowBut">open in window</button>      
       <h3>Comment</h3>
       <textarea placeholder="leave a comment here" cols="40" rows="5" class="actual_doc_comment"></textarea>
     </div>
+    <div class="windowsContainer"></div>
   </div>
 </body>
 <script type= "text/javascript">

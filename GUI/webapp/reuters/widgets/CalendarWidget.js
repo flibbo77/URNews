@@ -25,7 +25,7 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
           myDates.push([temp, self.manager.response.facet_counts.facet_dates[self.field][thisDate]]);
           dataTable.addRow([new Date(temp[0],temp[1]-1, temp[2].split("T")[0]), self.manager.response.facet_counts.facet_dates[self.field][thisDate]]);
         }
-    }
+      }
 
     function selectHandler(){
       var selection =chart.getSelection()[0].row;
@@ -80,6 +80,7 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
          };
 
         chart.draw(dataTable, options);
+
         google.visualization.events.addListener(chart, 'select', selectHandler);
      }
 

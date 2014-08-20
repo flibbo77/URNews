@@ -20,7 +20,8 @@ AjaxSolr.AutocompleteWidget = AjaxSolr.AbstractTextWidget.extend({
       }
 
       self.requestSent = false;
-      $(self.target).find('input').autocomplete('destroy').autocomplete({
+      
+      $(self.target).find('input').autocomplete({
         source: list,
         select: function(event, ui) {
           if (ui.item) {
@@ -31,6 +32,7 @@ AjaxSolr.AutocompleteWidget = AjaxSolr.AbstractTextWidget.extend({
           }
         }
       });
+    
 
       // This has lower priority so that requestSent is set.
       $(self.target).find('input').bind('keydown', function(e) {

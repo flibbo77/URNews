@@ -7,12 +7,13 @@ var codeConverter = (function() {
 
 	
 	init = function() {
-		$.getJSON ('js/nameCodeMap.json', function(data){
-          json = data;
+		//$.getJSON ('js/nameCodeMap.json', function(data){
+         // json = data;
+         json = nameCodeMap;
           console.log(json);
           
           
-        });
+        //});
         console.log(json);
 		
      	return that;

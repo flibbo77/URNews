@@ -62,16 +62,16 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
     if(doc.text){
       if (doc.text.length > 250) {
         console.log("länger!!!");//+Jahr!!!
-        snippet += doc.dateline + ' ' + doc.text.substring(0, 250);
+        snippet += doc.dateline.substring(4) + ' ' + doc.text.substring(0, 250);
         snippet += '<span style="display:none;">' + doc.text.substring(250);
-        snippet += '</span> <a href="#" class="more">...</a>';
+        snippet += '</span> <a  href="#" class="more morelesslink">...</a>';
       }
       else {
         snippet += doc.dateline + ' ' + doc.text;
       }
     }
 
-    var output = '<div class="NewsItem" ><h3 class="title" style="display: inline-block">' + doc.title + '</h3><button class="saveBut" style="display: inline; float: right">save</button>';
+    var output = '<div class="NewsItem" ><h3 class="title" style="display: inline-block">' + doc.title + '</h3><button class="saveBut" style="display: inline; float: right"></button>';
 
     output += '<p class="snippet">' + snippet + '</p>';
     if(doc.text)
@@ -90,11 +90,11 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
 
       if (span.is(':visible')) {
         span.hide();
-        //$this.text('more');
+        $(".morelesslink").text('....');
       }
       else {
         span.show();
-        //$this.text('less');
+        $(".morelesslink").text('less');
       }
 
 

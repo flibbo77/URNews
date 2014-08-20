@@ -6,6 +6,15 @@ LayoutSelectWidget = (function() {
 	butMap = null,
 	butCalendar = null,
 	butNothing = null,
+	all = 1,
+	map = 2,
+	calendar = 3,
+	nothing = 4,
+	actualLayout = all,
+	$calendar = null,
+	$map = null,
+	closeCalendarBut = null,
+	closeMapBut = null,
 	
 	
 	init = function() {
@@ -14,12 +23,19 @@ LayoutSelectWidget = (function() {
 		butMap = $(".selectMap");
 		butCalendar = $(".selectCalendar");
 		butNothing = $(".selectNothing");
+		closeMapBut = $(".closeMapBut");
+		closeCalendarBut = $(".closeCalendarBut");
 
 		butAll.prop("disabled", true);
 
 
 		$(".layoutSelectBut").off();
 		$(".layoutSelectBut").on("click", layoutSelectHandler);
+
+		closeCalendarBut.off();
+		closeMapBut.off();
+		closeCalendarBut.on("click", closeCalendarHandler);
+		closeMapBut.on("click", closeMapHandler);
 
 		$calendar = $("#calendar");
 		$map = $("#countries");
@@ -31,7 +47,10 @@ LayoutSelectWidget = (function() {
 		var clickedBut = $(e.currentTarget);
 		if(clickedBut.hasClass("selectAll")){
 			console.log("selectAll");
-			switchToLayoutAll();
+			setTimeout(function () {
+				switchToLayoutAll();
+    		}, 5);
+			switchToLayoutNothing();
 		}else if(clickedBut.hasClass("selectMap")){
 			console.log("slelctMap");
 			switchToLayoutMap();
@@ -44,7 +63,24 @@ LayoutSelectWidget = (function() {
 		}
 	},
 
+	closeMapHandler = function(){
+		if(actualLayout == all){
+			switchToLayoutCalendar();
+		}else if(actualLayout == map){
+			switchToLayoutNothing();
+		}
+	},
+
+	closeCalendarHandler = function(){
+		if(actualLayout == all){
+			switchToLayoutMap();
+		}else if (actualLayout == calendar){
+			switchToLayoutNothing();
+		}
+	},
+
 	switchToLayoutAll = function(){
+		actualLayout = all;
 		butAll.prop("disabled", true);
 		butMap.prop("disabled", false);
 		butCalendar.prop("disabled", false);
@@ -63,11 +99,18 @@ LayoutSelectWidget = (function() {
 			"height" : "200px",
 			"float" : "left"
 		});
+		closeCalendarBut.css({
+			"display" : "inline"
+		});
+		closeMapBut.css({
+			"display" : "inline"
+		});
 		$(that).trigger("redrawMap");
 		$(that).trigger("redrawCalendar", 7);
 	},
 
 	switchToLayoutMap = function(){
+		actualLayout = map;
 		butAll.prop("disabled", false);
 		butMap.prop("disabled", true);
 		butCalendar.prop("disabled", false);
@@ -84,10 +127,17 @@ LayoutSelectWidget = (function() {
 			"height" : "300px",
 			"width" : "450px",
 		});
+		closeCalendarBut.css({
+			"display" : "none"
+		});
+		closeMapBut.css({
+			"display" : "inline"
+		});
 		$(that).trigger("redrawMap");
 	},
 
 	switchToLayoutCalendar = function(){
+		actualLayout = calendar;
 		butAll.prop("disabled", false);
 		butMap.prop("disabled", false);
 		butCalendar.prop("disabled", true);
@@ -105,10 +155,17 @@ LayoutSelectWidget = (function() {
 		$map.css({
 			"display": "none"
 		});
+		closeCalendarBut.css({
+			"display" : "inline"
+		});
+		closeMapBut.css({
+			"display" : "none"
+		});
 		$(that).trigger("redrawCalendar", 12);
 	},
 
 	switchToLayoutNothing = function(){
+		actualLayout = nothing;
 		butAll.prop("disabled", false);
 		butMap.prop("disabled", false);
 		butCalendar.prop("disabled", false);
@@ -118,6 +175,12 @@ LayoutSelectWidget = (function() {
 		});
 		$map.css({
 			"display": "none"
+		});
+		closeCalendarBut.css({
+			"display" : "none"
+		});
+		closeMapBut.css({
+			"display" : "none"
 		});
 	};
 
