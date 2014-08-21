@@ -8,14 +8,21 @@ var SaveDocsWidget = (function() {
 	comment: ""
 	},
 	lastWasDeletet = false,
-	windowNr = 0;
+	windowNr = 0,
+	myWindows=[],
+
+	deleteDocBut = null,
+	openInWindowBut = null,
+	closeAllWindowsBut = null,
 
 	
 	init = function() {
 		localStorageModel = LocalStorageModel.init();
 		actualizeWindow();
-		console.log("SaveDocsInit");
-		//$(document).off();
+
+		deleteDocBut = $(".deleteDocBut");
+		openInWindowBut = $(".openInWindowBut");
+		closeAllWindowsBut = $(".closeAllWindowsBut");
 
     	$(document).on('click', 'button.saveBut', function (e) {
         	saveDocHandler(e);
@@ -45,6 +52,10 @@ var SaveDocsWidget = (function() {
         	openInWindowHandler(e);
    		 });
 
+    	$(document).on('click', 'button.closeAllWindowsBut', function (e) {
+        	closeAllWindowsHandler(e);
+   		 });
+
 		
      	return that;
 	},
@@ -65,7 +76,7 @@ var SaveDocsWidget = (function() {
 			content: $(e.target.parentElement).children(".snippet").text(),
 			comment: ""
 		}
-		doc.content = doc.content.substring(1,doc.content.length - 4 );
+		doc.content = doc.content.substring(0,doc.content.length - 4 );
 
 		localStorageModel.saveToLocalStorage(doc);
 		actualizeWindow();
@@ -98,19 +109,18 @@ var SaveDocsWidget = (function() {
 
 	openInWindowHandler = function(e){
 
-		var template = '<div id="cont1" class="container_'+windowNr+'" style="position:relative; top: 100px; left: 300px; width: 400px;z-index: 1;height:300px"';
-		template += ' data-icon="css/icons/news.png"  data-alwaisontop=false data-resizegrid="20,20" data-centeronwindow = true data-skin= "black" data-drag= true data-resize=true  data-dock="dock" data-collapse=false data-close=false data-containment="document" data-modal=false data-buttons="fullscreen,dock,close">';
-		template += '<h2 class="windowHeader">'+actDoc.title+'</h2><p class="windowContent">'+actDoc.content+'</p>;'
-        template += '<p class="windowContentComment">'+actDoc.comment+'</p></div>';
-    	$(".windowsContainer").append(template);
-		$(".container_"+windowNr).containerize();
-		setTimeout(function(){
-			$(".container_"+windowNr).css({
-			"z-index":"1"
-			});
-			console.log("setTimeout");
-		}, 5000);
+		myWindows.push(window.open("", windowNr, "width=400, height=300"));
+		myWindows[myWindows.length-1].document.write("<h1>"+actDoc.title +"</h1><p>"+actDoc.content+"</p><p>"+actDoc.comment+"</p>");
+		myWindows[myWindows.length-1].document.title = actDoc.title;
 		windowNr++;
+	},
+
+	closeAllWindowsHandler = function(e){
+		for(var i = 0; i < myWindows.length; i++){
+			myWindows[i].close();
+			myWindows = [];
+			windowNr = 0;
+		}
 	},
 
 	actualizeWindow = function(){

@@ -83,18 +83,20 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
   },
 
   init: function () {
-    $(document).on('click', 'p.snippet', function () {
+    $(document).on('click', 'p.snippet, h3.title', function () {
       var $this = $(this),
           span = $this.find('span');
+          if(!span[0])
+            span = $this.siblings().find('span');
           console.log(span);
 
       if (span.is(':visible')) {
         span.hide();
-        $(".morelesslink").text('....');
+        $this.find(".morelesslink").text('....');
       }
       else {
         span.show();
-        $(".morelesslink").text('less');
+        $this.find(".morelesslink").text('less');
       }
 
 

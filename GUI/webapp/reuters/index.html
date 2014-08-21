@@ -29,17 +29,14 @@
   <script src="widgets/AutocompleteWidget.js"></script>
   <script src="widgets/CountryCodeWidget.js"></script>
   <script src="widgets/CalendarWidget.js"></script>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-   
-  <script type="text/javascript" src="inc/jquery.mb.containerPlus.js"></script>
-  <script type="text/javascript" src="inc/mb.containerPlus.plugins.js"></script>
-  
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>  
   
 </head>
 <body>
   <div id="wrap">      
     <div id="header">
       <h1>UR News Search</h1>
+    <img id="header_pic" src="images/search_pic.png"/>
     </div>
     <div class="left">
       <div class="layoutButtons">
@@ -102,13 +99,13 @@
       
       <h3>saved documents:</h3>
       <div  class="saved_docs_headings"><ul></ul></div>
-      <textarea readonly cols="40" rows="15"class="actual_doc_content"></textarea>
       <button class="deleteDocBut"><img src="images/delete.png"/></button>
-      <button class="openInWindowBut">open in window</button>      
+      <button class="openInWindowBut"><img src="images/open_in_new_window.png"/></button>  
+      <button class="closeAllWindowsBut"><img src="images/close_all_windows.png"/></button>      
+      <textarea readonly cols="40" rows="15"class="actual_doc_content"></textarea>
       <h3>Comment</h3>
       <textarea placeholder="leave a comment here" cols="40" rows="5" class="actual_doc_comment"></textarea>
     </div>
-    <div class="windowsContainer"></div>
   </div>
 </body>
 <script type= "text/javascript">

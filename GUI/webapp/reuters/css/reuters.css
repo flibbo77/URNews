@@ -22,6 +22,15 @@ a:hover {
   text-decoration: underline;
 }
 
+#header_pic {
+ position: relative;
+left: 246px;
+top: -44px;
+z-index: 2;
+width: 50px;
+transform: rotate(-21deg);
+}
+
 #wrap {
   width: 1350px;
   margin: 0px auto;
@@ -94,8 +103,13 @@ button:hover {
 }
 
 .snippet:hover {
-  background-color: #ddd;
+  background-color: #eee;
   cursor: pointer
+}
+
+h3.title:hover {
+  color: #D10065;
+  cursor: pointer;
 }
 
 .userBar {
@@ -156,7 +170,7 @@ button:hover {
   color: #333;
   
 }
-#search  {
+#search    {
   width: 220px;
   padding: 0px;
   margin:0px;
@@ -203,10 +217,13 @@ button:hover {
   height:100px; 
   width: 300px; 
   overflow:auto;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   border: solid 1px #888;
   padding:  5px;
+}
+.actual_doc_content{
+  margin-top: 20px;
 }
 
 .savedDocTitle:hover{
