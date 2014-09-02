@@ -203,6 +203,13 @@ h3.title:hover {
 #countries {
   float: left;
 }
+.loadingMap {
+  display: inline;
+  position: relative;
+  left: -215px;
+  top: 90px;
+  z-index: 4;
+}
 #search_help {
   font-size: 80%;
 }

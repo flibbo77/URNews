@@ -36,6 +36,9 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
     google.visualization.events.addListener(chart, "ready", function(){
       google.visualization.events.removeListener();
       google.visualization.events.addListener(chart, 'regionClick', selectHandler);
+      $(".loadingMap").css({
+        "display":"none"
+      })
       console.log("map ready");
     })
 
