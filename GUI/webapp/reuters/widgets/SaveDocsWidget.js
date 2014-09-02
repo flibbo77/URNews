@@ -109,11 +109,13 @@ var SaveDocsWidget = (function() {
 	},
 
 	closeAllWindowsHandler = function(e){
+		console.log(myWindows);
 		for(var i = 0; i < myWindows.length; i++){
 			myWindows[i].close();
-			myWindows = [];
-			windowNr = 0;
 		}
+		myWindows = [];
+		windowNr = 0;
+		
 	},
 
 	actualizeWindow = function(){
