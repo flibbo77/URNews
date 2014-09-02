@@ -18,7 +18,6 @@ AjaxSolr.CalendarWidget = AjaxSolr.AbstractFacetWidget.extend({
        dataTable.addColumn({ type: 'date', id: 'Date' });
        dataTable.addColumn({ type: 'number', id: 'Articles' });
        var myDates = [];
-       console.log(self.manager.response.facet_counts.facet_dates);
        for (var thisDate in self.manager.response.facet_counts.facet_dates[self.field]) {
         var temp = thisDate.split("-");
         if(temp.length == 3){

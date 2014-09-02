@@ -30,6 +30,13 @@ z-index: 2;
 width: 50px;
 transform: rotate(-21deg);
 }
+.sortSelector{
+  position: relative;
+top: -100px;
+left: 890px;
+display: inline
+
+}
 
 #wrap {
   width: 1349px;
@@ -122,7 +129,7 @@ h3.title:hover {
 }
 .bottom {
   float:  none; 
-  padding-top: 5px;
+  padding-top: 15px;
 }
 #result a {
   margin-right: 5px;

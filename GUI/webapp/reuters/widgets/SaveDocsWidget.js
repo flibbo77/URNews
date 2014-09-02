@@ -38,13 +38,11 @@ var SaveDocsWidget = (function() {
 		      "color": "white"
 		    });
 
-    		console.log(e);
     		loadDocHandler(e);
     	});
 
     
     	$(document).on('click', 'button.deleteDocBut', function (e) {
-    		console.log(e);
     		deleteDocHandler(e);
     	});
 
@@ -80,7 +78,6 @@ var SaveDocsWidget = (function() {
 
 		localStorageModel.saveToLocalStorage(doc);
 		actualizeWindow();
-		console.log($("."+actDoc.index));
 		$("."+actDoc.index).css({
 		      "background-color": "#9c004b",
 		      "color": "white"
@@ -90,10 +87,8 @@ var SaveDocsWidget = (function() {
 	loadDocHandler = function(e){
 		if(actDoc.index >= 0 && !lastWasDeletet){
 			actDoc.comment = $(".actual_doc_comment")[0].value;
-			console.log (actDoc.comment);
 			localStorageModel.saveChangesToLocalStorage(actDoc.index, actDoc.title, actDoc.comment);
 		}
-		console.log(e);
 
 		actDoc.index = e.target.classList[1];
 		actDoc.title = e.target.textContent;
@@ -104,11 +99,9 @@ var SaveDocsWidget = (function() {
 		$(".actual_doc_content")[0].value = actDoc.content;
 		$(".actual_doc_comment")[0].value = actDoc.comment;
 		lastWasDeletet = false;
-		console.log(actDoc.comment);
 	},
 
 	openInWindowHandler = function(e){
-
 		myWindows.push(window.open("", windowNr, "width=400, height=300"));
 		myWindows[myWindows.length-1].document.write("<h1>"+actDoc.title +"</h1><p>"+actDoc.content+"</p><p>"+actDoc.comment+"</p>");
 		myWindows[myWindows.length-1].document.title = actDoc.title;

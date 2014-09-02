@@ -1,7 +1,6 @@
 LayoutSelectWidget = (function() {
 	var that = {},
 	calendar = null,
-	map = null,
 	butAll = null,
 	butMap = null,
 	butCalendar = null,
@@ -18,7 +17,6 @@ LayoutSelectWidget = (function() {
 	
 	
 	init = function() {
-		console.log("LayoutSelectWidget.init");
 		butAll = $(".selectAll");
 		butMap = $(".selectMap");
 		butCalendar = $(".selectCalendar");
@@ -43,22 +41,17 @@ LayoutSelectWidget = (function() {
 	},
 
 	layoutSelectHandler = function(e){
-		console.log($(e.currentTarget));
 		var clickedBut = $(e.currentTarget);
 		if(clickedBut.hasClass("selectAll")){
-			console.log("selectAll");
 			setTimeout(function () {
 				switchToLayoutAll();
     		}, 5);
 			switchToLayoutNothing();
 		}else if(clickedBut.hasClass("selectMap")){
-			console.log("slelctMap");
 			switchToLayoutMap();
 		}else if(clickedBut.hasClass("selectCalendar")){
-			console.log("slelctCalendar");
 			switchToLayoutCalendar();
 		}else if(clickedBut.hasClass("selectNothing")){
-			console.log("slelctNothing");
 			switchToLayoutNothing();
 		}
 	},
@@ -131,7 +124,7 @@ LayoutSelectWidget = (function() {
 			"display" : "none"
 		});
 		closeMapBut.css({
-			"display" : "inline"
+			"display" : "inline",
 		});
 		$(that).trigger("redrawMap");
 	},

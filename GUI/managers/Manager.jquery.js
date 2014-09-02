@@ -1,3 +1,4 @@
+  
 (function (callback) {
   if (typeof define === 'function' && define.amd) {
     define(['core/AbstractManager'], callback);
@@ -18,6 +19,11 @@ AjaxSolr.Manager = AjaxSolr.AbstractManager.extend(
   executeRequest: function (servlet, string, handler, errorHandler) {
     var self = this,
         options = {dataType: 'json'};
+
+   
+  
+    this.store.get('sort').val(sortSelect.getSortOrder());
+   
     string = string || this.store.string();
     handler = handler || function (data) {
       self.handleResponse(data);
@@ -25,13 +31,14 @@ AjaxSolr.Manager = AjaxSolr.AbstractManager.extend(
     errorHandler = errorHandler || function (jqXHR, textStatus, errorThrown) {
       self.handleError(textStatus + ', ' + errorThrown);
     };
+    //console.log(string);
     if (this.proxyUrl) {
       options.url = this.proxyUrl;
       options.data = {query: string};
       options.type = 'POST';
     }
     else {
-      options.url = this.solrUrl + servlet + '?' + string + '&wt=json&json.wrf=?';
+      options.url = this.solrUrl + servlet + '?' + string +  '&wt=json&json.wrf=?';
     }
     jQuery.ajax(options).done(handler).fail(errorHandler);
   }

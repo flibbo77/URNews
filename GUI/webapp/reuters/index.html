@@ -13,6 +13,7 @@
   <script src="js/LocalStorageModel.js"></script>
   <script src="widgets/SaveDocsWidget.js"></script>
   <script src="widgets/LayoutSelectWidget.js"></script>
+  <script src="js/sortSelect.js"></script>
   <script src="js/reuters.js"></script>
   <script src="../../core/Core.js"></script>
   <script src="../../core/AbstractManager.js"></script>
@@ -36,7 +37,17 @@
   <div id="wrap">      
     <div id="header">
       <h1>UR News Search</h1>
-    <img id="header_pic" src="images/search_pic.png"/>
+      <img id="header_pic" src="images/search_pic.png"/>
+      
+        <div class="sortSelector">
+        <label for="speed">Sort By</label>
+        <select name="sortBy" class="sortBy">
+          <option value="score desc">Relevance</option>
+          <option value="date asc">Date ascending</option>
+          <option selected= "selected" value="date desc">Date descending</option>
+        </select>
+        </div>
+      
     </div>
     <div class="left">
       <div class="layoutButtons">

@@ -1,9 +1,11 @@
 var Manager;
 var saveDocs = SaveDocsWidget;
+var changeSort = sortSelect;
 
   window.onload = function(){
     LayoutSelectWidget.init();
     saveDocs.init();
+    sortSelect.init();
   };
 
 
@@ -14,11 +16,6 @@ var saveDocs = SaveDocsWidget;
 
     Manager = new AjaxSolr.Manager({
       solrUrl: 'http://localhost:8983/solr/collection1/'
-      //solrUrl: 'http://reuters-demo.tree.ewdev.ca:9090/reuters/'
-      // If you are using a local Solr instance with a "reuters" core, use:
-      // solrUrl: 'http://localhost:8983/solr/reuters/'
-      // If you are using a local Solr instance with a single core, use:
-      // solrUrl: 'http://localhost:8983/solr/'
     });
     Manager.addWidget(new AjaxSolr.ResultWidget({
       id: 'result',
@@ -83,9 +80,11 @@ var saveDocs = SaveDocsWidget;
       'f.countryCodes.facet.limit': -1,
       'facet.date': 'date',
       'facet.date.start': '1987-02-26T00:00:00.000Z/DAY',
-      'facet.date.end': '1987-10-20T00:00:00.000Z/DAY+1DAY',
+      'facet.date.end': '1987-10-21T00:00:00.000Z/DAY+1DAY',
       'facet.date.gap': '+1DAY',
-      'json.nl': 'map'
+      'json.nl': 'map',
+      'sort': 'date desc'
+
     };
     for (var name in params) {
       Manager.store.addByValue(name, params[name]);
@@ -94,7 +93,10 @@ var saveDocs = SaveDocsWidget;
   });
 
   $(saveDocs).on("saveDoc", function(e, doc){
-    console.log(doc);
+  });
+
+  $(sortSelect).on("sortOrderChanged", function(){
+    Manager.doRequest();
   });
 
    

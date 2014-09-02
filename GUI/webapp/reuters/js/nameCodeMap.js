@@ -820,7 +820,7 @@ var nameCodeMap =[
     "CODE":"SO"
   },
   {
-    "NAME":"SOUTH AFRICA",
+    "NAME":"SOUTH-AFRICA",
     "CODE":"ZA"
   },
   {

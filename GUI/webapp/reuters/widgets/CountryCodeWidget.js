@@ -40,9 +40,7 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
     })
 
     function selectHandler(obj) {
-      console.log(obj);
       var nameOfSelected = codeConv.getName(obj.region).toLowerCase();
-      console.log(nameOfSelected); 
 
       if (nameOfSelected && self.add(nameOfSelected)) {
         self.doRequest();
@@ -52,7 +50,6 @@ AjaxSolr.CountryCodeWidget = AjaxSolr.AbstractFacetWidget.extend({
     $(layoutSelectWidget).on("redrawMap", redrawMap);
 
     function redrawMap(){
-      //self.doRequest();
       if(chart)
         chart.draw(data,options);
     }

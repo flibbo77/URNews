@@ -28,7 +28,7 @@
 	<fields>
 		<field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/>
 		<field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
-		<field name="title" type="text_general" indexed="true" stored="true" multiValued="false" />
+		<field name="title" type="text_general" indexed="true" stored="true" required="true" multiValued="false" />
 		<field name="places" type="string" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
 		<field name="countryCodes" type="string" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
 		<field name="topics" type="string" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
@@ -36,7 +36,7 @@
 		<field name="exchanges" type="string" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
 		<field name="companies" type="string" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
 		<field name="allText" type="text_general" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
-		<field name="text" type="text_general" indexed="true" stored="true" multiValued="false" />
+		<field name="text" type="text_general" indexed="true" required="true" stored="true" multiValued="false" />
 		<field name="date" type="pdate" indexed="true" stored="true" multiValued="false" omitNorms="true" termVectors="true" />
 		<field name="dateline" type="string" indexed="true" stored="true" multiValued="false" omitNorms="true" termVectors="true" />
 		<copyField source="title" dest="allText" />

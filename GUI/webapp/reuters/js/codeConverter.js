@@ -3,25 +3,13 @@ var codeConverter = (function() {
 	var that = {},
 	json = [],
 	
-	
-
-	
 	init = function() {
-		//$.getJSON ('js/nameCodeMap.json', function(data){
-         // json = data;
          json = nameCodeMap;
-          console.log(json);
-          
-          
-        //});
-        console.log(json);
-		
      	return that;
 	},
 
 	getCode = function(land){
 		for(var i = 0; i < json.length; i++){
-			console.log(json[i]);
 			if (json[i].NAME == land){
 				return json[i].CODE;
 			}
@@ -37,10 +25,6 @@ var codeConverter = (function() {
 			}
 		}
 	};
-
-	
-
-
 
 	that.init = init;
 	that.getCode = getCode;

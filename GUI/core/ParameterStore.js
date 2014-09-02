@@ -268,7 +268,8 @@ AjaxSolr.ParameterStore = AjaxSolr.Class.extend(
         }
       }
     }
-    return params.join('&');
+    var result = params.join("&");
+    return result;
   },
 
   /**

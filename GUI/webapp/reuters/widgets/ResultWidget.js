@@ -41,7 +41,6 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
 
     for (var i = 0, l = this.manager.response.response.docs.length; i < l; i++) {
       var doc = this.manager.response.response.docs[i];
-          console.log(doc);
       $(this.target).append(this.template(doc));
 
       var items = [];
@@ -61,7 +60,6 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
     var snippet = '';
     if(doc.text){
       if (doc.text.length > 250) {
-        console.log("länger!!!");//+Jahr!!!
         snippet += doc.dateline.substring(4) + ' ' + doc.text.substring(0, 250);
         snippet += '<span style="display:none;">' + doc.text.substring(250);
         snippet += '</span> <a  href="#" class="more morelesslink">...</a>';
@@ -88,7 +86,6 @@ AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
           span = $this.find('span');
           if(!span[0])
             span = $this.siblings().find('span');
-          console.log(span);
 
       if (span.is(':visible')) {
         span.hide();
