@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AJAX Solr</title>
+  <link rel="stylesheet" href="css/reuters.css">
+  <link href='css/mb.containerPlus.css' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css">
+  <script src="js/nameCodeMap.js"></script>
+  <script src="js/codeConverter.js"></script>
+  <script src="js/LocalStorageModel.js"></script>
+  <script src="widgets/SaveDocsWidget.js"></script>
+  <script src="widgets/LayoutSelectWidget.js"></script>
+  <script src="js/sortSelect.js"></script>
+  <script src="js/reuters.js"></script>
+  <script src="../../core/Core.js"></script>
+  <script src="../../core/AbstractManager.js"></script>
+  <script src="../../managers/Manager.jquery.js"></script>
+  <script src="../../core/Parameter.js"></script>
+  <script src="../../core/ParameterStore.js"></script>
+  <script src="../../core/AbstractWidget.js"></script>
+  <script src="widgets/ResultWidget.js"></script>
+  <script src="../../widgets/jquery/PagerWidget.js"></script>
+  <script src="../../core/AbstractFacetWidget.js"></script>
+  <script src="widgets/TagcloudWidget.js"></script>
+  <script src="widgets/CurrentSearchWidget.js"></script>
+  <script src="../../core/AbstractTextWidget.js"></script>
+  <script src="widgets/AutocompleteWidget.js"></script>
+  <script src="widgets/CountryCodeWidget.js"></script>
+  <script src="widgets/CalendarWidget.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>  
+  
+</head>
+<body>
+  <div id="wrap">      
+    <div id="header">
+      <h1>UR News Search</h1>
+      <img id="header_pic" src="images/search_pic.png"/>
+      
+        <div class="sortSelector">
+        <label for="speed">Sort By</label>
+        <select name="sortBy" class="sortBy">
+          <option selected= "selected" value="score desc">Relevance</option>
+          <option value="date asc">Date ascending</option>
+          <option value="date desc">Date descending</option>
+        </select>
+        </div>
+      
+    </div>
+    <div class="left">
+      <div class="layoutButtons">
+        <button class="layoutSelectBut selectAll"><img src="images/all.png"/></button>
+        <button class="layoutSelectBut selectMap"><img src="images/map.png"/></button>
+        <button class="layoutSelectBut selectCalendar"><img src="images/calendar.png"/></button>
+        <button class="layoutSelectBut selectNothing"><img src="images/nothing.png"/></button>
+      </div>
+      <h2 class="currentSelectionHeader">Current Selection</h2>
+      <ul id="selection"></ul>
+
+      <div class = "searchField">
+        <h2>Search in Article</h2>
+        <span id="search_help">(press ESC to close suggestions)</span>
+        <ul id="search">
+          <input type="text" id="query" name="query" autocomplete="off" style="width: 216px">
+        </ul>
+      </div>
+      <div id="accordion">
+        <h3>Top Topics</h3>
+        <div class="tagcloud" id="topics"></div>
+
+        <h3 >Top Organisations</h3>
+        <div class=" tagcloud" id="organisations"></div>
+
+        <h3 >Top Exchanges</h3>
+        <div class="tagcloud" id="exchanges"></div>
+      </div>
+    </div>
+
+     <div class="right">
+      <div class="bottom">
+        <div id= "closeMapButtonContainer">
+          <button class="closeMapBut"><img src="images/nothing_small.png"/></button>
+            <img class="loadingMap" src="images/ajax-loader.gif" />
+          <div id="countries" style="width: 300px">
+          </div>
+        </div>
+
+        <div id="closeCalendarButtonContainer">
+          <button class="closeCalendarBut"><img src="images/nothing_small.png"/></button>
+          <div id="calendar">
+          
+        </div></div>
+       <!-- <div id="preview"></div>-->
+        <div class="clear"></div> 
+      </div>
+      <div id="result">
+        <div id="navigation" class= "navi">
+          <ul id="pager"></ul>
+          <div id="pager-header"></div>
+        </div>
+        <div id="docs"></div>
+        <div id="navigation_bot" class="navi">
+          <ul id="pager_bot"></ul>
+          <div id="pager-header_bot"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="userBar">
+      
+      <h3>saved documents:</h3>
+      <div  class="saved_docs_headings"><ul></ul></div>
+      <button class="deleteDocBut"><img src="images/delete.png"/></button>
+      <button class="openInWindowBut"><img src="images/open_in_new_window.png"/></button>  
+      <button class="closeAllWindowsBut"><img src="images/close_all_windows.png"/></button>      
+      <textarea readonly cols="40" rows="15"class="actual_doc_content"></textarea>
+      <h3>Comment</h3>
+      <textarea placeholder="leave a comment here" cols="40" rows="5" class="actual_doc_comment"></textarea>
+    </div>
+  </div>
+</body>
+<script type= "text/javascript">
+   google.load("visualization", "1", {packages:["geochart"]});
+</script>
+<script type="text/javascript">
+      google.load("visualization", "1.1", {packages:["calendar"]});
+</script>
+
+</html>

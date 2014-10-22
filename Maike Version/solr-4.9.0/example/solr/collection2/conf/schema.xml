@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+
+<schema name="reuters" version="1.1">
+
+	<!--collection 2 -->
+
+	<types>
+		<fieldtype name="string" class="solr.StrField" sortMissingLast="true" omitNorms="true" />
+
+		<fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0" />
+		<!-- This will stop your Solr from crashing when Tika index fields that Solr don't know of. -->
+		<fieldtype name="ignored" stored="false" indexed="false" multiValued="true" class="solr.StrField" />
+		<fieldType name="pdate" class="solr.DateField" sortMissingLast="true" />
+
+		<fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+			<analyzer type="index">
+				<tokenizer class="solr.StandardTokenizerFactory" />
+				<filter class="solr.SnowballPorterFilterFactory" language="English"/>
+				<filter class="solr.LowerCaseFilterFactory" />
+			</analyzer>
+			<analyzer type="query">
+				<tokenizer class="solr.StandardTokenizerFactory" />
+				<filter class="solr.SnowballPorterFilterFactory" language="English"/>
+				<filter class="solr.LowerCaseFilterFactory" />
+			</analyzer>
+		</fieldType>
+	</types>
+
+	<fields>
+		<field name="_version_" type="long" indexed="true" stored="true" multiValued="false"/>
+		<field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+		<field name="title" type="text_general" indexed="true" stored="true" required="true" multiValued="false" />
+		<field name="places" type="text_general" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
+		<field name="countryCodes" type="string" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
+		<field name="topics" type="text_general" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
+		<field name="organisations" type="text_general" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
+		<field name="exchanges" type="text_general" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
+		<field name="companies" type="text_general" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
+		<field name="allText" type="text_general" indexed="true" stored="true" multiValued="true" omitNorms="true" termVectors="true" />
+		<field name="text" type="text_general" indexed="true" required="true" stored="true" multiValued="false" />
+		<field name="date" type="pdate" indexed="true" stored="true" multiValued="false" omitNorms="true" termVectors="true" />
+		<field name="dateline" type="text_general" indexed="true" stored="true" multiValued="false" omitNorms="true" termVectors="true" />
+		<copyField source="title" dest="allText" />
+		<copyField source="text" dest="allText" />
+		<copyField source="places" dest="allText" />
+		<copyField source="topics" dest="allText" />
+		<copyField source="companies" dest="allText" />
+		<copyField source="exchanges" dest="allText" />
+		<copyField source="dateline" dest="allText"/>
+	</fields>
+
+	<uniqueKey>id</uniqueKey>
+
+	<defaultSearchField>allText</defaultSearchField>
+
+	<solrQueryParser defaultOperator="OR" />
+</schema>
