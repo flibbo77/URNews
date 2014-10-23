@@ -14,12 +14,12 @@
 
 		<fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
 			<analyzer type="index">
-				<tokenizer class="solr.StandardTokenizerFactory" />
+				<tokenizer class="solr.PatternTokenizerFactory" pattern="\s*,:;\s*"/>
 				<filter class="solr.SnowballPorterFilterFactory" language="English"/>
 				<filter class="solr.LowerCaseFilterFactory" />
 			</analyzer>
 			<analyzer type="query">
-				<tokenizer class="solr.StandardTokenizerFactory" />
+				<tokenizer class="solr.PatternTokenizerFactory" pattern="\s*,:;\s*"/>
 				<filter class="solr.SnowballPorterFilterFactory" language="English"/>
 				<filter class="solr.LowerCaseFilterFactory" />
 			</analyzer>
@@ -53,5 +53,5 @@
 
 	<defaultSearchField>allText</defaultSearchField>
 
-	<solrQueryParser defaultOperator="OR" />
+	<solrQueryParser defaultOperator="AND" />
 </schema>
