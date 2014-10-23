@@ -136,10 +136,10 @@ AjaxSolr.PagerWidget = AjaxSolr.AbstractWidget.extend(
     text = text || page;
 
     if (page && page != this.currentPage) {
-      return $('<a href="#"></a>').html(text).attr('rel', this.relValue(page)).addClass(classnames[1]).click(this.clickHandler(page));
+      return $('<a href="#" class="pagerLink"></a>').html(text).attr('rel', this.relValue(page)).addClass(classnames[1]).click(this.clickHandler(page));
     }
     else {
-      return $('<span></span>').html(text).addClass(classnames.join(' '));
+      return $('<span class="pagerLink"></span>').html(text).addClass(classnames.join(' '));
     }
   },
 
