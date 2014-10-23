@@ -83,7 +83,7 @@ var changeSort = sortSelect;
       'facet.date.end': '1987-10-21T00:00:00.000Z/DAY+1DAY',
       'facet.date.gap': '+1DAY',
       'json.nl': 'map',
-      'sort': 'date desc'
+      //'sort': 'date desc'
 
     };
     for (var name in params) {

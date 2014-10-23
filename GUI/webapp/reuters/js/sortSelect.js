@@ -24,7 +24,12 @@ var sortSelect = (function() {
 	},
 
 	getSortOrder = function(){
-		return sortOrder;
+		if(!selector) 
+			selector = $(".sortBy");
+
+		var res = sortOrder;
+		sortOrder = selector[0].options[selector[0].options.selectedIndex].value;
+		return res;
 	};
 
 	
