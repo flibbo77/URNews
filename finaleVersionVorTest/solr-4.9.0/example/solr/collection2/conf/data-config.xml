@@ -1,0 +1,23 @@
+<dataConfig>         
+    <dataSource type="FileDataSource" encoding="UTF-8" />
+    <document>         
+        <entity name="page"
+            processor="XPathEntityProcessor"          
+            forEach="/LEWIS/REUTERS/"
+            url="reutersCorpus/reut-100.xml"
+            transformer="DateFormatTransformer">
+            <field column="id"        xpath="/LEWIS/REUTERS/@NEWID" />
+            <field column="title"     xpath="/LEWIS/REUTERS/TEXT/TITLE" />
+            <field column="text"  xpath="/LEWIS/REUTERS/TEXT/BODY" />
+            <field column="places"  xpath="/LEWIS/REUTERS/PLACES/D" />
+            <field column="topics"  xpath="/LEWIS/REUTERS/TOPICS/D" />
+            <field column="organisations"  xpath="/LEWIS/REUTERS/ORGS/D" />
+            <field column="exchanges"  xpath="/LEWIS/REUTERS/EXCHANGES/D" />
+            <field column="companies"  xpath="/LEWIS/REUTERS/COMPANIES/D" />
+            <field column="date"  xpath="/LEWIS/REUTERS/DATE" dateTimeFormat="dd-MMM-yyyy H:m:s.S" />
+            <field column="dateline"  xpath="/LEWIS/REUTERS/TEXT/DATELINE" />
+            <field column="countryCodes" xpath="/LEWIS/REUTERS/PLACES/D" />
+        </entity>
+    </document>
+</dataConfig>
+
