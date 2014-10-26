@@ -14,12 +14,12 @@
 
 		<fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
 			<analyzer type="index">
-				<tokenizer class="solr.PatternTokenizerFactory" pattern="\s*,:;\s*"/>
+				<tokenizer class="solr.PatternTokenizerFactory" pattern="[\s,;:]"/>
 				<filter class="solr.SnowballPorterFilterFactory" language="English"/>
 				<filter class="solr.LowerCaseFilterFactory" />
 			</analyzer>
 			<analyzer type="query">
-				<tokenizer class="solr.PatternTokenizerFactory" pattern="\s*,:;\s*"/>
+				<tokenizer class="solr.PatternTokenizerFactory" pattern="[\s,;:]"/>
 				<filter class="solr.SnowballPorterFilterFactory" language="English"/>
 				<filter class="solr.LowerCaseFilterFactory" />
 			</analyzer>

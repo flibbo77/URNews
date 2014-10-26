@@ -18752,3 +18752,406 @@ INFO  - 2014-10-23 09:41:37.319; org.apache.solr.core.SolrCore; [collection2] we
 INFO  - 2014-10-23 09:41:37.394; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111101122346252668649_1414050096203&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414050096205&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=1 
 INFO  - 2014-10-23 09:42:30.710; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111101122346252668649_1414050096203&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&start=95&q=*:*&_=1414050096206&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=30 
 INFO  - 2014-10-23 09:42:30.755; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111101122346252668649_1414050096203&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414050096207&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=1 
+INFO  - 2014-10-23 12:21:40.957; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414059698440&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=128 
+INFO  - 2014-10-23 12:21:41.250; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414059698441&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=5 
+INFO  - 2014-10-23 12:21:52.662; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414059698442&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&fq=topics:acq&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=13 status=0 QTime=95 
+INFO  - 2014-10-23 12:21:52.786; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414059698443&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&fq=topics:acq&rows=0} hits=13 status=0 QTime=3 
+INFO  - 2014-10-23 12:24:03.884; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414059698444&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=99 
+INFO  - 2014-10-23 12:24:04.011; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414059698445&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=3 
+INFO  - 2014-10-23 12:24:09.036; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=money&_=1414059698446&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=10 status=0 QTime=101 
+INFO  - 2014-10-23 12:24:09.126; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet=true&facet.mincount=1&q=money&facet.limit=-1&_=1414059698447&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=10 status=0 QTime=5 
+INFO  - 2014-10-23 12:24:19.139; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=london&_=1414059698448&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=101 
+INFO  - 2014-10-23 12:24:19.222; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111103028512694872916_1414059698439&facet=true&facet.mincount=1&q=london&facet.limit=-1&_=1414059698449&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=12 status=0 QTime=10 
+INFO  - 2014-10-23 12:31:29.264; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110040744537487626076_1414060287267&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414060287268&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=97 
+INFO  - 2014-10-23 12:31:29.489; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110040744537487626076_1414060287267&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414060287269&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=2 
+INFO  - 2014-10-23 12:31:41.992; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110040744537487626076_1414060287267&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=london,&_=1414060287270&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=97 
+INFO  - 2014-10-23 12:31:42.091; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110040744537487626076_1414060287267&facet=true&facet.mincount=1&q=london,&facet.limit=-1&_=1414060287271&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=12 status=0 QTime=5 
+INFO  - 2014-10-23 12:31:47.988; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110040744537487626076_1414060287267&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=london&_=1414060287272&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=106 
+INFO  - 2014-10-23 12:31:48.078; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110040744537487626076_1414060287267&facet=true&facet.mincount=1&q=london&facet.limit=-1&_=1414060287273&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=12 status=0 QTime=7 
+INFO  - 2014-10-26 12:51:16.575; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-10-26 12:51:16.615; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\contexts at interval 0
+INFO  - 2014-10-26 12:51:16.624; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\contexts\solr-jetty-context.xml
+INFO  - 2014-10-26 12:51:19.110; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-10-26 12:51:19.218; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-10-26 12:51:19.238; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-10-26 12:51:19.239; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-10-26 12:51:19.240; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-10-26 12:51:19.422; org.apache.solr.core.ConfigSolr; Loading container configuration from c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\solr.xml
+INFO  - 2014-10-26 12:51:19.602; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr
+INFO  - 2014-10-26 12:51:19.615; org.apache.solr.core.CoreContainer; New CoreContainer 19568451
+INFO  - 2014-10-26 12:51:19.617; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-10-26 12:51:19.638; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-10-26 12:51:19.638; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-10-26 12:51:19.646; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-10-26 12:51:19.647; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-10-26 12:51:19.649; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-10-26 12:51:19.650; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-10-26 12:51:19.650; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-10-26 12:51:19.651; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-10-26 12:51:19.652; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-10-26 12:51:20.093; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-10-26 12:51:20.095; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-10-26 12:51:20.097; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-10-26 12:51:20.211; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr
+INFO  - 2014-10-26 12:51:20.224; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\
+INFO  - 2014-10-26 12:51:20.226; org.apache.solr.core.CorePropertiesLocator; Found core collection2 in c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\
+INFO  - 2014-10-26 12:51:20.227; org.apache.solr.core.CorePropertiesLocator; Found 2 core definitions
+INFO  - 2014-10-26 12:51:20.230; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\'
+INFO  - 2014-10-26 12:51:20.230; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\'
+INFO  - 2014-10-26 12:51:20.285; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2014-10-26 12:51:20.285; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2014-10-26 12:51:20.286; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/extraction/lib (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\..\..\..\solr\contrib\extraction\lib).
+WARN  - 2014-10-26 12:51:20.287; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/extraction/lib (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\..\..\..\solr\contrib\extraction\lib).
+WARN  - 2014-10-26 12:51:20.288; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/dataimporthandler/lib/ (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\..\..\..\solr\contrib\dataimporthandler\lib).
+WARN  - 2014-10-26 12:51:20.288; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/dataimporthandler/lib/ (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\..\..\..\solr\contrib\dataimporthandler\lib).
+INFO  - 2014-10-26 12:51:20.291; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-4.9.0.jar' to classloader
+INFO  - 2014-10-26 12:51:20.291; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-4.9.0.jar' to classloader
+INFO  - 2014-10-26 12:51:20.292; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-extras-4.9.0.jar' to classloader
+INFO  - 2014-10-26 12:51:20.293; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-extras-4.9.0.jar' to classloader
+INFO  - 2014-10-26 12:51:20.357; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_4_2
+INFO  - 2014-10-26 12:51:20.357; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_4_2
+INFO  - 2014-10-26 12:51:20.452; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-26 12:51:20.452; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-26 12:51:20.462; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-26 12:51:20.462; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-26 12:51:20.481; org.apache.solr.schema.IndexSchema; [collection2] Schema name=reuters
+INFO  - 2014-10-26 12:51:20.481; org.apache.solr.schema.IndexSchema; [collection1] Schema name=reuters
+WARN  - 2014-10-26 12:51:20.567; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-10-26 12:51:20.567; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-10-26 12:51:20.601; org.apache.solr.schema.IndexSchema; default search field in schema is allText
+INFO  - 2014-10-26 12:51:20.601; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2014-10-26 12:51:20.602; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+INFO  - 2014-10-26 12:51:20.603; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2014-10-26 12:51:20.604; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-26 12:51:20.607; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-26 12:51:20.614; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection2' using configuration from instancedir c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\
+INFO  - 2014-10-26 12:51:20.644; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-26 12:51:20.654; org.apache.solr.core.SolrCore; [collection2] Opening new SolrCore at c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\, dataDir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\
+INFO  - 2014-10-26 12:51:20.655; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection2
+INFO  - 2014-10-26 12:51:20.681; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data
+INFO  - 2014-10-26 12:51:20.683; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index/
+INFO  - 2014-10-26 12:51:20.684; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index
+INFO  - 2014-10-26 12:51:20.796; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\
+INFO  - 2014-10-26 12:51:20.796; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-26 12:51:20.798; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\, dataDir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\
+INFO  - 2014-10-26 12:51:20.798; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection1
+INFO  - 2014-10-26 12:51:20.801; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data
+INFO  - 2014-10-26 12:51:20.803; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index/
+INFO  - 2014-10-26 12:51:20.804; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index
+INFO  - 2014-10-26 12:51:20.833; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-26 12:51:20.833; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-26 12:51:20.844; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-26 12:51:20.844; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-26 12:51:20.852; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-10-26 12:51:20.852; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-10-26 12:51:20.854; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-26 12:51:20.854; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-26 12:51:20.858; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-26 12:51:20.858; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-26 12:51:20.867; org.apache.solr.core.RequestHandlers; created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+INFO  - 2014-10-26 12:51:20.867; org.apache.solr.core.RequestHandlers; created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+INFO  - 2014-10-26 12:51:20.885; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-26 12:51:20.886; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-26 12:51:20.885; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-26 12:51:20.889; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-26 12:51:20.942; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index,segFN=segments_1c,generation=48}
+INFO  - 2014-10-26 12:51:20.942; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index,segFN=segments_4,generation=4}
+INFO  - 2014-10-26 12:51:20.944; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 48
+INFO  - 2014-10-26 12:51:20.944; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 4
+INFO  - 2014-10-26 12:51:20.992; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@1496918[collection2] main
+INFO  - 2014-10-26 12:51:20.992; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@162d3f4[collection1] main
+INFO  - 2014-10-26 12:51:21.001; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf
+INFO  - 2014-10-26 12:51:21.001; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf
+INFO  - 2014-10-26 12:51:21.002; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf\}
+INFO  - 2014-10-26 12:51:21.003; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf\}
+INFO  - 2014-10-26 12:51:21.017; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf
+INFO  - 2014-10-26 12:51:21.017; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf
+WARN  - 2014-10-26 12:51:21.018; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-10-26 12:51:21.019; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-10-26 12:51:21.019; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+WARN  - 2014-10-26 12:51:21.020; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-10-26 12:51:21.020; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-26 12:51:21.021; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-26 12:51:21.050; org.apache.solr.core.CoreContainer; registering core: collection2
+INFO  - 2014-10-26 12:51:21.050; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@162d3f4[collection1] main{StandardDirectoryReader(segments_4:10:nrt _2(4.9):C19043)}
+INFO  - 2014-10-26 12:51:21.050; org.apache.solr.core.SolrCore; [collection2] Registered new searcher Searcher@1496918[collection2] main{StandardDirectoryReader(segments_1c:142:nrt _1a(4.9):C105)}
+INFO  - 2014-10-26 12:51:21.050; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2014-10-26 12:51:21.054; org.apache.solr.servlet.SolrDispatchFilter; user.dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example
+INFO  - 2014-10-26 12:51:21.055; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-10-26 12:51:21.091; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-10-26 12:51:25.350; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=topics,memSize=4949,tindexSize=43,time=4,phase1=4,nTerms=40,bigTerms=2,termInstances=69,uses=0}
+INFO  - 2014-10-26 12:51:25.371; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=organisations,memSize=4750,tindexSize=42,time=4,phase1=4,nTerms=3,bigTerms=0,termInstances=5,uses=0}
+INFO  - 2014-10-26 12:51:25.372; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=exchanges,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+INFO  - 2014-10-26 12:51:25.374; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=countryCodes,memSize=4949,tindexSize=49,time=1,phase1=1,nTerms=30,bigTerms=2,termInstances=56,uses=0}
+INFO  - 2014-10-26 12:51:25.491; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414324283905&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=268 
+INFO  - 2014-10-26 12:51:25.662; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283906&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=4 
+INFO  - 2014-10-26 12:51:40.797; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&start=10&q=*:*&_=1414324283907&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=66 
+INFO  - 2014-10-26 12:51:40.849; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283908&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=2 
+INFO  - 2014-10-26 12:51:48.753; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414324283909&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&fq=date:[1987-04-13T00:00:00Z+TO+1987-04-13T23:59:59Z]&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=13 status=0 QTime=72 
+INFO  - 2014-10-26 12:51:48.789; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283910&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&fq=date:[1987-04-13T00:00:00Z+TO+1987-04-13T23:59:59Z]&rows=0} hits=13 status=0 QTime=2 
+INFO  - 2014-10-26 12:52:03.361; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414324283911&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&fq=date:[1987-04-13T00:00:00Z+TO+1987-04-13T23:59:59Z]&fq=topics:earn&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=4 status=0 QTime=55 
+INFO  - 2014-10-26 12:52:03.389; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283912&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&fq=date:[1987-04-13T00:00:00Z+TO+1987-04-13T23:59:59Z]&fq=topics:earn&rows=0} hits=4 status=0 QTime=2 
+INFO  - 2014-10-26 12:52:05.795; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414324283913&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&fq=topics:earn&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=46 
+INFO  - 2014-10-26 12:52:05.825; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283914&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&fq=topics:earn&rows=0} hits=12 status=0 QTime=2 
+INFO  - 2014-10-26 12:52:22.246; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=lala&_=1414324283915&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&fq=topics:earn&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=0 status=0 QTime=51 
+INFO  - 2014-10-26 12:52:22.278; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=lala&facet.limit=-1&_=1414324283916&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&fq=topics:earn&rows=0} hits=0 status=0 QTime=2 
+INFO  - 2014-10-26 12:52:27.971; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=jajaja&_=1414324283917&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&fq=topics:earn&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=0 status=0 QTime=38 
+INFO  - 2014-10-26 12:52:27.989; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=jajaja&facet.limit=-1&_=1414324283918&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&fq=topics:earn&rows=0} hits=0 status=0 QTime=2 
+INFO  - 2014-10-26 12:52:30.543; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=jajaja&_=1414324283919&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=0 status=0 QTime=31 
+INFO  - 2014-10-26 12:52:30.559; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=jajaja&facet.limit=-1&_=1414324283920&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=0 status=0 QTime=2 
+INFO  - 2014-10-26 12:52:33.709; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414324283921&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=30 
+INFO  - 2014-10-26 12:52:33.749; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283922&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=1 
+INFO  - 2014-10-26 12:52:40.994; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+asc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414324283923&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=33 
+INFO  - 2014-10-26 12:52:41.038; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283924&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=1 
+INFO  - 2014-10-26 12:52:45.763; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414324283925&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=28 
+INFO  - 2014-10-26 12:52:45.817; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414324283926&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=2 
+INFO  - 2014-10-26 12:52:52.591; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=jajajaja&_=1414324283927&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=1 status=0 QTime=30 
+INFO  - 2014-10-26 12:52:52.613; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=jajajaja&facet.limit=-1&_=1414324283928&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=1 status=0 QTime=2 
+INFO  - 2014-10-26 13:25:34.611; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-10-26 13:25:34.646; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\contexts at interval 0
+INFO  - 2014-10-26 13:25:34.654; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\contexts\solr-jetty-context.xml
+INFO  - 2014-10-26 13:25:36.821; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-10-26 13:25:36.922; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-10-26 13:25:36.939; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-10-26 13:25:36.939; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-10-26 13:25:36.940; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-10-26 13:25:37.101; org.apache.solr.core.ConfigSolr; Loading container configuration from c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\solr.xml
+INFO  - 2014-10-26 13:25:37.247; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr
+INFO  - 2014-10-26 13:25:37.259; org.apache.solr.core.CoreContainer; New CoreContainer 25697871
+INFO  - 2014-10-26 13:25:37.261; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-10-26 13:25:37.278; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-10-26 13:25:37.279; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-10-26 13:25:37.286; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-10-26 13:25:37.287; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-10-26 13:25:37.289; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-10-26 13:25:37.289; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-10-26 13:25:37.290; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-10-26 13:25:37.291; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-10-26 13:25:37.291; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-10-26 13:25:37.636; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-10-26 13:25:37.639; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-10-26 13:25:37.640; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-10-26 13:25:37.692; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr
+INFO  - 2014-10-26 13:25:37.705; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\
+INFO  - 2014-10-26 13:25:37.707; org.apache.solr.core.CorePropertiesLocator; Found core collection2 in c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\
+INFO  - 2014-10-26 13:25:37.708; org.apache.solr.core.CorePropertiesLocator; Found 2 core definitions
+INFO  - 2014-10-26 13:25:37.711; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\'
+INFO  - 2014-10-26 13:25:37.711; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\'
+INFO  - 2014-10-26 13:25:37.766; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2014-10-26 13:25:37.766; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2014-10-26 13:25:37.766; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/extraction/lib (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\..\..\..\solr\contrib\extraction\lib).
+WARN  - 2014-10-26 13:25:37.767; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/extraction/lib (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\..\..\..\solr\contrib\extraction\lib).
+WARN  - 2014-10-26 13:25:37.768; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/dataimporthandler/lib/ (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\..\..\..\solr\contrib\dataimporthandler\lib).
+WARN  - 2014-10-26 13:25:37.768; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/dataimporthandler/lib/ (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\..\..\..\solr\contrib\dataimporthandler\lib).
+INFO  - 2014-10-26 13:25:37.771; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:25:37.771; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:25:37.772; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-extras-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:25:37.773; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-extras-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:25:37.834; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_4_2
+INFO  - 2014-10-26 13:25:37.834; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_4_2
+INFO  - 2014-10-26 13:25:37.932; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-26 13:25:37.932; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-26 13:25:37.940; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-26 13:25:37.940; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-26 13:25:37.961; org.apache.solr.schema.IndexSchema; [collection2] Schema name=reuters
+INFO  - 2014-10-26 13:25:37.963; org.apache.solr.schema.IndexSchema; [collection1] Schema name=reuters
+WARN  - 2014-10-26 13:25:38.025; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-10-26 13:25:38.025; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-10-26 13:25:38.061; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2014-10-26 13:25:38.061; org.apache.solr.schema.IndexSchema; default search field in schema is allText
+INFO  - 2014-10-26 13:25:38.062; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2014-10-26 13:25:38.063; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+INFO  - 2014-10-26 13:25:38.065; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-26 13:25:38.066; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-26 13:25:38.074; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection2' using configuration from instancedir c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\
+INFO  - 2014-10-26 13:25:38.102; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-26 13:25:38.112; org.apache.solr.core.SolrCore; [collection2] Opening new SolrCore at c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\, dataDir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\
+INFO  - 2014-10-26 13:25:38.113; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection2
+INFO  - 2014-10-26 13:25:38.137; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data
+INFO  - 2014-10-26 13:25:38.139; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index/
+INFO  - 2014-10-26 13:25:38.141; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index
+INFO  - 2014-10-26 13:25:38.251; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\
+INFO  - 2014-10-26 13:25:38.252; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-26 13:25:38.254; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\, dataDir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\
+INFO  - 2014-10-26 13:25:38.254; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection1
+INFO  - 2014-10-26 13:25:38.256; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data
+INFO  - 2014-10-26 13:25:38.257; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index/
+INFO  - 2014-10-26 13:25:38.259; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index
+INFO  - 2014-10-26 13:25:38.287; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-26 13:25:38.287; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-26 13:25:38.299; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-26 13:25:38.299; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-26 13:25:38.308; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-10-26 13:25:38.309; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-10-26 13:25:38.310; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-26 13:25:38.310; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-26 13:25:38.318; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-26 13:25:38.318; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-26 13:25:38.323; org.apache.solr.core.RequestHandlers; created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+INFO  - 2014-10-26 13:25:38.323; org.apache.solr.core.RequestHandlers; created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+INFO  - 2014-10-26 13:25:38.333; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-26 13:25:38.333; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-26 13:25:38.334; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-26 13:25:38.334; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-26 13:25:38.390; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index,segFN=segments_1c,generation=48}
+INFO  - 2014-10-26 13:25:38.390; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index,segFN=segments_4,generation=4}
+INFO  - 2014-10-26 13:25:38.391; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 48
+INFO  - 2014-10-26 13:25:38.392; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 4
+INFO  - 2014-10-26 13:25:38.431; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5212d6[collection2] main
+INFO  - 2014-10-26 13:25:38.431; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@52da3c[collection1] main
+INFO  - 2014-10-26 13:25:38.440; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf
+INFO  - 2014-10-26 13:25:38.440; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf
+INFO  - 2014-10-26 13:25:38.440; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf\}
+INFO  - 2014-10-26 13:25:38.441; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf\}
+INFO  - 2014-10-26 13:25:38.456; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf
+INFO  - 2014-10-26 13:25:38.456; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf
+WARN  - 2014-10-26 13:25:38.457; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-10-26 13:25:38.458; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-10-26 13:25:38.459; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+WARN  - 2014-10-26 13:25:38.459; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-10-26 13:25:38.460; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-26 13:25:38.460; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-26 13:25:38.488; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2014-10-26 13:25:38.488; org.apache.solr.core.CoreContainer; registering core: collection2
+INFO  - 2014-10-26 13:25:38.488; org.apache.solr.core.SolrCore; [collection2] Registered new searcher Searcher@5212d6[collection2] main{StandardDirectoryReader(segments_1c:142:nrt _1a(4.9):C105)}
+INFO  - 2014-10-26 13:25:38.488; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@52da3c[collection1] main{StandardDirectoryReader(segments_4:10:nrt _2(4.9):C19043)}
+INFO  - 2014-10-26 13:25:38.491; org.apache.solr.servlet.SolrDispatchFilter; user.dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example
+INFO  - 2014-10-26 13:25:38.492; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-10-26 13:25:38.524; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-10-26 13:25:46.228; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=topics,memSize=4949,tindexSize=43,time=2,phase1=2,nTerms=40,bigTerms=2,termInstances=69,uses=0}
+INFO  - 2014-10-26 13:25:46.246; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=organisations,memSize=4750,tindexSize=42,time=1,phase1=1,nTerms=3,bigTerms=0,termInstances=5,uses=0}
+INFO  - 2014-10-26 13:25:46.247; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=exchanges,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+INFO  - 2014-10-26 13:25:46.248; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=countryCodes,memSize=4949,tindexSize=49,time=0,phase1=0,nTerms=30,bigTerms=2,termInstances=56,uses=0}
+INFO  - 2014-10-26 13:25:46.341; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=london&_=1414324283929&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=240 
+INFO  - 2014-10-26 13:25:46.404; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=london&facet.limit=-1&_=1414324283930&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=12 status=0 QTime=4 
+INFO  - 2014-10-26 13:26:23.690; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&start=5&q=london&_=1414324283931&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=66 
+INFO  - 2014-10-26 13:26:23.723; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=london&facet.limit=-1&_=1414324283932&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=12 status=0 QTime=3 
+INFO  - 2014-10-26 13:26:38.349; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&start=10&q=london&_=1414324283933&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=60 
+INFO  - 2014-10-26 13:26:38.381; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery111104755614139139652_1414324283904&facet=true&facet.mincount=1&q=london&facet.limit=-1&_=1414324283934&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=12 status=0 QTime=3 
+INFO  - 2014-10-26 13:31:49.769; org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2014-10-26 13:31:49.770; org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/C:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/example/solr-webapp/webapp/},C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example/webapps/solr.war
+INFO  - 2014-10-26 13:31:52.448; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-10-26 13:31:52.481; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\contexts at interval 0
+INFO  - 2014-10-26 13:31:52.489; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\contexts\solr-jetty-context.xml
+INFO  - 2014-10-26 13:31:54.553; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-10-26 13:31:54.671; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-10-26 13:31:54.687; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-10-26 13:31:54.688; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-10-26 13:31:54.689; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-10-26 13:31:54.849; org.apache.solr.core.ConfigSolr; Loading container configuration from c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\solr.xml
+INFO  - 2014-10-26 13:31:54.980; org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr
+INFO  - 2014-10-26 13:31:54.990; org.apache.solr.core.CoreContainer; New CoreContainer 12010789
+INFO  - 2014-10-26 13:31:54.992; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-10-26 13:31:55.009; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-10-26 13:31:55.010; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2014-10-26 13:31:55.017; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-10-26 13:31:55.018; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-10-26 13:31:55.019; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-10-26 13:31:55.020; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-10-26 13:31:55.020; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-10-26 13:31:55.021; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-10-26 13:31:55.021; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-10-26 13:31:55.363; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-10-26 13:31:55.364; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-10-26 13:31:55.366; org.apache.solr.core.CoreContainer; Host Name: 
+INFO  - 2014-10-26 13:31:55.417; org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr
+INFO  - 2014-10-26 13:31:55.429; org.apache.solr.core.CorePropertiesLocator; Found core collection1 in c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\
+INFO  - 2014-10-26 13:31:55.430; org.apache.solr.core.CorePropertiesLocator; Found core collection2 in c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\
+INFO  - 2014-10-26 13:31:55.431; org.apache.solr.core.CorePropertiesLocator; Found 2 core definitions
+INFO  - 2014-10-26 13:31:55.433; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\'
+INFO  - 2014-10-26 13:31:55.433; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\'
+INFO  - 2014-10-26 13:31:55.478; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2014-10-26 13:31:55.478; org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+WARN  - 2014-10-26 13:31:55.478; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/extraction/lib (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\..\..\..\solr\contrib\extraction\lib).
+WARN  - 2014-10-26 13:31:55.479; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/extraction/lib (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\..\..\..\solr\contrib\extraction\lib).
+WARN  - 2014-10-26 13:31:55.480; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/dataimporthandler/lib/ (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\..\..\..\solr\contrib\dataimporthandler\lib).
+WARN  - 2014-10-26 13:31:55.480; org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: ../../../solr/contrib/dataimporthandler/lib/ (resolved as: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\..\..\..\solr\contrib\dataimporthandler\lib).
+INFO  - 2014-10-26 13:31:55.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:31:55.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:31:55.482; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-extras-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:31:55.483; org.apache.solr.core.SolrResourceLoader; Adding 'file:/c:/xampp/htdocs/URNews/Maike%20Version/solr-4.9.0/dist/solr-dataimporthandler-extras-4.9.0.jar' to classloader
+INFO  - 2014-10-26 13:31:55.534; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_4_2
+INFO  - 2014-10-26 13:31:55.534; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: LUCENE_4_2
+INFO  - 2014-10-26 13:31:55.627; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-26 13:31:55.627; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-26 13:31:55.635; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-26 13:31:55.635; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-26 13:31:55.654; org.apache.solr.schema.IndexSchema; [collection1] Schema name=reuters
+INFO  - 2014-10-26 13:31:55.654; org.apache.solr.schema.IndexSchema; [collection2] Schema name=reuters
+WARN  - 2014-10-26 13:31:55.717; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+WARN  - 2014-10-26 13:31:55.717; org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.DateField]. Please consult documentation how to replace it accordingly.
+INFO  - 2014-10-26 13:31:55.752; org.apache.solr.schema.IndexSchema; default search field in schema is allText
+INFO  - 2014-10-26 13:31:55.752; org.apache.solr.schema.IndexSchema; default search field in schema is text
+INFO  - 2014-10-26 13:31:55.753; org.apache.solr.schema.IndexSchema; query parser default operator is AND
+INFO  - 2014-10-26 13:31:55.754; org.apache.solr.schema.IndexSchema; query parser default operator is OR
+INFO  - 2014-10-26 13:31:55.756; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-26 13:31:55.757; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-26 13:31:55.765; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection2' using configuration from instancedir c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\
+INFO  - 2014-10-26 13:31:55.796; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-26 13:31:55.807; org.apache.solr.core.SolrCore; [collection2] Opening new SolrCore at c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\, dataDir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\
+INFO  - 2014-10-26 13:31:55.808; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection2
+INFO  - 2014-10-26 13:31:55.836; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data
+INFO  - 2014-10-26 13:31:55.838; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index/
+INFO  - 2014-10-26 13:31:55.840; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index
+INFO  - 2014-10-26 13:31:55.937; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\
+INFO  - 2014-10-26 13:31:55.938; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-26 13:31:55.939; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\, dataDir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\
+INFO  - 2014-10-26 13:31:55.940; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection1
+INFO  - 2014-10-26 13:31:55.941; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data
+INFO  - 2014-10-26 13:31:55.941; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index/
+INFO  - 2014-10-26 13:31:55.943; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index
+INFO  - 2014-10-26 13:31:55.990; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-26 13:31:55.990; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-26 13:31:56.001; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-26 13:31:56.001; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-26 13:31:56.011; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-10-26 13:31:56.011; org.apache.solr.core.RequestHandlers; created /select: solr.SearchHandler
+INFO  - 2014-10-26 13:31:56.012; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-26 13:31:56.012; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-26 13:31:56.021; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-26 13:31:56.021; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-26 13:31:56.026; org.apache.solr.core.RequestHandlers; created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+INFO  - 2014-10-26 13:31:56.026; org.apache.solr.core.RequestHandlers; created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+INFO  - 2014-10-26 13:31:56.037; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-26 13:31:56.037; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-26 13:31:56.037; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-26 13:31:56.038; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-26 13:31:56.097; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\data\index,segFN=segments_1c,generation=48}
+INFO  - 2014-10-26 13:31:56.097; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\data\index,segFN=segments_4,generation=4}
+INFO  - 2014-10-26 13:31:56.098; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 48
+INFO  - 2014-10-26 13:31:56.098; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 4
+INFO  - 2014-10-26 13:31:56.133; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5e1573[collection2] main
+INFO  - 2014-10-26 13:31:56.133; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@fa9f1[collection1] main
+INFO  - 2014-10-26 13:31:56.142; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf
+INFO  - 2014-10-26 13:31:56.142; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf
+INFO  - 2014-10-26 13:31:56.143; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf\}
+INFO  - 2014-10-26 13:31:56.143; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf\}
+INFO  - 2014-10-26 13:31:56.158; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection1\conf
+INFO  - 2014-10-26 13:31:56.158; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example\solr\collection2\conf
+WARN  - 2014-10-26 13:31:56.159; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-10-26 13:31:56.159; org.apache.solr.rest.ManagedResource; No stored data found for /rest/managed
+WARN  - 2014-10-26 13:31:56.160; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+WARN  - 2014-10-26 13:31:56.160; org.apache.solr.rest.ManagedResource; No registered observers for /rest/managed
+INFO  - 2014-10-26 13:31:56.160; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-26 13:31:56.161; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-26 13:31:56.190; org.apache.solr.core.CoreContainer; registering core: collection2
+INFO  - 2014-10-26 13:31:56.190; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2014-10-26 13:31:56.191; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@fa9f1[collection1] main{StandardDirectoryReader(segments_4:10:nrt _2(4.9):C19043)}
+INFO  - 2014-10-26 13:31:56.190; org.apache.solr.core.SolrCore; [collection2] Registered new searcher Searcher@5e1573[collection2] main{StandardDirectoryReader(segments_1c:142:nrt _1a(4.9):C105)}
+INFO  - 2014-10-26 13:31:56.193; org.apache.solr.servlet.SolrDispatchFilter; user.dir=c:\xampp\htdocs\URNews\Maike Version\solr-4.9.0\example
+INFO  - 2014-10-26 13:31:56.193; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-10-26 13:31:56.228; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-10-26 13:32:00.054; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=topics,memSize=4949,tindexSize=43,time=4,phase1=4,nTerms=40,bigTerms=2,termInstances=69,uses=0}
+INFO  - 2014-10-26 13:32:00.080; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=organisations,memSize=4750,tindexSize=42,time=1,phase1=1,nTerms=3,bigTerms=0,termInstances=5,uses=0}
+INFO  - 2014-10-26 13:32:00.081; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=exchanges,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+INFO  - 2014-10-26 13:32:00.082; org.apache.solr.request.UnInvertedField; UnInverted multi-valued field {field=countryCodes,memSize=4949,tindexSize=49,time=0,phase1=0,nTerms=30,bigTerms=2,termInstances=56,uses=0}
+INFO  - 2014-10-26 13:32:00.223; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110268313555046916_1414326718494&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=date+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=*:*&_=1414326718495&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=105 status=0 QTime=294 
+INFO  - 2014-10-26 13:32:00.375; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110268313555046916_1414326718494&facet=true&facet.mincount=1&q=*:*&facet.limit=-1&_=1414326718496&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=105 status=0 QTime=2 
+INFO  - 2014-10-26 13:32:07.260; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110268313555046916_1414326718494&facet.date.start=1987-02-26T00:00:00.000Z/DAY&facet=true&sort=score+desc&facet.mincount=1&facet.limit=20&facet.date=date&f.topics.facet.limit=50&json.nl=map&wt=json&q=london&_=1414326718497&facet.field=topics&facet.field=organisations&facet.field=exchanges&facet.field=countryCodes&facet.date.gap=%2B1DAY&f.countryCodes.facet.limit=-1&facet.date.end=1987-10-21T00:00:00.000Z/DAY%2B1DAY} hits=12 status=0 QTime=79 
+INFO  - 2014-10-26 13:32:07.305; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={json.wrf=jQuery11110268313555046916_1414326718494&facet=true&facet.mincount=1&q=london&facet.limit=-1&_=1414326718498&facet.field=topics&facet.field=organisations&facet.field=exchanges&json.nl=map&wt=json&rows=0} hits=12 status=0 QTime=3 
